@@ -1,0 +1,54 @@
+This directory contains sample and solution programs from
+the chapter "Debugging and testing" of the book
+A.K. Hartmann "A practical guide to computer simulations" 
+(World Scientific, 2008)
+
+
+test program for gdb
+--------------------
+SOURCES:
+  gdbtest.c
+COMPILE:
+  cc -o gdbtest gdbtest.c -g
+RUN:
+  gdb gdbtest
+
+
+test program for valgrind
+-------------------------
+Program allocates an array with one element to few. (It calculates just the
+sum of the array elements)
+SOURCES:
+   memerror1.c
+COMPILE:
+  cc -o memerror1 memerror1.c -g
+RUN:
+  valgrind  memerror1
+
+
+test program for valgrind
+-------------------------
+Program that forgets to free an array (It calculates just the
+sum of the array elements)
+SOURCES:
+   memerror2.c
+COMPILE:
+  cc -o memerror2 memerror2.c -g
+RUN:
+  valgrind memerror2
+
+
+Test functions for gprof
+------------------------
+To test gprof, a lot of time consuming calculations for an array
+a[0]...a[n-1] of <n> number is made: all sums and product of
+subsets of numbers a[i]...a[j] are calculated.
+SOURCES:
+  gproftest.c 
+COMPILE:
+  cc -o gproftest gproftest.c -pg
+RUN:
+  gproftest <n>
+
+  
+

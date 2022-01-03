@@ -1,0 +1,16 @@
+# multi branch fitting
+f0(x)=a0*exp(-x/mu)
+f1(x)=a1*exp(-x/mu)
+f2(x)=a2*exp(-x/mu)
+#fit  f0(x) "expo1.dat" index 0  using 1:2:3 via a0,mu
+#fit  f1(x) "expo1.dat" index 1  using 1:2:3 via a1,mu
+#fit  f2(x) "expo1.dat" index 2  using 1:2:3 via a2,mu
+fb(x,s) = (s==2) ? f2(x) : f1(x)
+f(x,s) = (s==0) ? f0(x) : fb(x,s)
+fit f(x,y) "expo1.dat" using 1:-2:2:3 via a0,a1,a2,mu
+set xlabel "x"
+set ylabel "P(x)"
+set logscale y
+plot "expo1.dat" u 1:2:3 w e, f(x,0) title sprintf("a0=%f", a0),\
+     f(x,1) title sprintf("a1=%f", a1), f(x,2) title sprintf("a2=%f", a2)
+set label sprintf("mu=%f", mu) at 8,1

@@ -1,0 +1,67 @@
+This directory contains examples from
+the chapter "Information Retrieval, Publishing 
+and Presentations" of the book
+A.K. Hartmann "A practical guide to computer simulations" 
+(World Scientific, 2008)
+
+
+graph
+-----
+A graph described in the dot language
+SOURCE:
+  test.dot
+
+
+nice plots using gnuplot
+------------------------
+Generates a publication quality plot of a data file using gnuplot.
+SOURCES:
+  plot_PW_integrand.gp
+  integrand.dat
+  B.dat
+RUN:
+  gnuplot plot_PW_integrand.gp
+OUTPUT:
+  PW_integrand.eps
+
+
+povray
+------
+Sets up a (random) configuration of atoms and makes a povray
+input file from it such that using povray a projection of a 
+three-dimensional image can be generated.
+SOURCES:
+  atoms.c
+COMPILE:
+  cc -o atoms atoms.c -lm -Wall  
+RUN:
+  atoms
+OUTPUT:
+  cfg.pov
+
+LaTeX
+-----
+a small example of a LaTeX file with a formula
+SOURCE:
+  example.tex
+COMPILE:
+  latex example
+  dvipdf example
+VIEW
+  xdvi example
+  xpdf example.pdf
+
+
+talk
+----
+A small talk consiting of two slides
+SOURCES:
+  testtalk.tex           main file
+  mylogo.pdf             logo of group
+  slide_group/           subdirectory for second slide
+COMPILE:
+  pdflatex testtalk
+VIEW:
+  xpdf testtalk.pdf
+
+

@@ -1,0 +1,51 @@
+This directory contains sample and solution programs from
+the chapter "Object-oriented programming" of the book
+A.K. Hartmann "A practical guide to computer simulations"
+(World Scientific, 2008)
+
+
+histograms
+----------
+(includes also solution to exercise)
+Data structure for histograms (plus extra entries for moments), 
+functions to create and delete histograms, 
+to insert number into histogram and to return mean
+Main function generates exponentially distributed random numbers
+and puts them into histogram, prints mean (or pdf if -DSOLUTION)
+solution to exercise: print histogram as pdf
+SOURCES:
+  histo.h   
+  histo.c
+  histo_main.c
+  histo_fprint_pdf.c  (solution to exercise)
+COMPILE:
+  cc -o histo  histo.c main_histo.c  -lm
+  cc -o histo  histo.c main_histo.c histo_fprint_pdf.c -lm -DSOLUTION
+RUN:
+  histo
+  OR
+  histo <seed>
+
+
+histograms in C++
+-----------------
+(includes also solution to exercise)
+Data structure for histograms (plus extra entries for moments), 
+functions to create and delete histograms, 
+to insert number into histogram, to print histogram and
+to return mean.
+Main function generates exponentially distributed random numbers
+and puts them into histogram, prints mean (twice, via
+copying a histogram) if -DSLUTION is used as well.
+SOURCES:
+  histo++.h
+  histo.cpp
+  histo_main.cpp
+  histoSOL.cpp  (solution to exercises)
+COMPILE:
+  c++ -o histo main_histo.cpp histo.cpp -lm
+  c++ -o histo main_histo.cpp histo.cpp histoSOL.cpp -lm -DSOLUTION
+RUN:
+  histo
+  OR
+  histo <seed>

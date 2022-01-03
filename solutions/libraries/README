@@ -1,0 +1,124 @@
+This directory contains sample and solution programs from
+the chapter "Libraries" of the book
+A.K. Hartmann "A practical guide to computer simulations"
+(World Scientific, 2008)
+
+
+Sorting of numbers
+------------------
+Generates an array of random numbers and sorts them using qsort().
+A function is provided, which compares to numbers, needed by qsort
+SOURCES:
+  sorting.c
+COMPILE:
+  cc -o sorting sorting.c -Wall
+RUN:
+  sorting
+
+
+Priority queue 0
+----------------
+Example for using the standard template library: priority queue.
+Strings are stored in the queue and retrieved.
+(C++)
+SOURCES:
+  pqueue.cpp
+COMPILE:
+  g++ -o pqueue0 pqueue0.cpp -Wall
+RUN:
+  pqueue0
+
+
+Priority queue 1
+----------------
+Example for using the standard template library: priority queue.
+Events are initialized randomly, put in the queue and
+obtained from the queue in the order of increasing times
+(C++)
+SOURCES:
+  pqueue.cpp
+COMPILE:
+  g++ -o pqueue pqueue.cpp -Wall
+RUN:
+  pqueue
+
+
+maps
+------
+Use of standard template library: map                      
+Agents are initialized randomly, put in the map based      
+on the x-y position as key. The the agents and all        
+neigbors are printed
+SOURCES:
+  maps.cpp
+COMPILE:
+  g++ -o maps maps.cpp -Wall
+RUN:
+  maps
+
+
+Binomial distribution
+---------------------
+Prints the probability mass function of the binomial distribution.
+Needs gnu scientific library
+SOURCES:
+  binomial.c
+COMPILE:
+  cc -o binomial  binomial.c -lgsl -lgslcblas -lm -Wall
+RUN:
+  binomial <p> <n> 
+
+
+Random numbers
+--------------
+Generates and prints uniformly distributed random numbers. 
+Needs gnu scientific library
+SOURCES:
+  randnum.c
+COMPILE:
+  cc -o randnum randnum.c -lgsl -lgslcblas -lm -Wall
+RUN:
+  randnum
+
+
+linear equation
+---------------
+Solves a simple system of linear equations.
+Needs gnu scientific library
+SOURCES:
+  lin_eq.c
+COMPILE:
+  cc -o lin_eq lin_eq.c -lgsl -lgslcblas -lm -Wall
+RUN:
+  lin_eq
+
+
+Sorting of vectors
+------------------
+(sample solution to exercise)
+Generates an array of random (x,y) vecort and sorts them using qsort()
+according increasing length.
+A function is provided, which compares two vectors, needed by qsort.
+SOURCES:
+  vectorsort.c
+COMPILE:
+  cc -o vectorsort vectorsort.c -Wall
+RUN:
+  vectorsort
+
+
+Histogram of exponential distribution
+-------------------------------------
+(solution to exercise)
+Draws random numbers from an exponential distribution, puts them
+into a histogram, and prints histogram normalized.
+Needs gnu scientific library
+SOURCES:
+  expo.c
+COMPILE:
+  cc -o expo expo.c -lgsl -lgslcblas -lm -Wall
+RUN:
+  expo
+
+
+

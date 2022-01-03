@@ -1,0 +1,18 @@
+This directory contains examples and solution programs from the book
+A.K. Hartmann "The big practical guide to computer simulations"
+(World Scientific, 2014).
+For each chpater of the book, a subdirectory exists, as follows
+
+directory      chapter
+------------------------------------------------------------------
+c-programming  Programming in C
+scripts        Scripts
+se             Software Engineering
+debugging      Debugging and Testing
+oop            Object-oriented Software Development
+algorithms     Algorithms and data structures
+libraries      Libraries
+randomness     Randomness and Statistics
+literature     Information Retrieval, Publishing and Presentations
+
+

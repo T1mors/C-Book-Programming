@@ -1,0 +1,78 @@
+This directory contains sample and solution programs from
+the chapter "Scripts" of the book
+A.K. Hartmann "A big practical guide to computer simulations" 
+(World Scientific, 2014)
+
+
+First program
+--------------
+The Python script realizes a loop and some list operations
+SOURCES:
+  loop.py 
+COMPILE:
+  ---
+RUN:
+  loops.py
+
+
+String handling
+---------------
+The Python script shows some examples for string operations
+SOURCES:
+  strings.py 
+COMPILE:
+  ---
+RUN:
+  strings.py
+
+
+Dictionaries
+--------------
+The Python script gives some examples on hwo to you disctionaries
+SOURCES:
+  dict.py 
+COMPILE:
+  ---
+RUN:
+  dict.py
+
+
+Merging files
+--------------
+The Python script shows how for two data files the columns
+of the files can be merged into one file. In particular file
+access in Python can be learned from this sample.
+SOURCES:
+  mix_files.py
+  test1.dat
+  test2.dat 
+COMPILE:
+  ---
+RUN:
+  mix_files.py
+
+
+Functions in Python
+-------------------
+The Python script shows how to define and use functions.
+SOURCES:
+  functions.py 
+COMPILE:
+  ---
+RUN:
+  functions.py
+
+
+Resampling
+--------------
+The Python script shows how error bars of complex quantities
+can be obtained via "resampling". For didactical reasons, the
+data is just randomly generated within the script.
+SOURCES:
+  resampling.py 
+COMPILE:
+  ---
+RUN:
+  resampling.py
+
+

@@ -1,0 +1,11 @@
+graph test2
+{
+node [shape=box]
+0 [label=Milk, style=bold ]
+Butter [shape=house,height=2, color=blue]
+Cheese [fontname="Palatino-Italic"]
+Wheat -- Sandwich
+Cheese -- 0 -- Butter Butter -- Cake [label = bakery]
+Butter -- Sandwich [style = dashed]
+Cheese -- Sandwich
+}

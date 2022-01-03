@@ -1,0 +1,8595 @@
+%!PS-Adobe-2.0
+%%Creator: Graphviz version 2.16.1 (Thu Dec 13 09:00:54 UTC 2007)
+%%For: (hartmann) Prof. Dr. Alexander Hartmann
+%%Title: test
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 1686 2127
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 1650 2091 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+% 0
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+794 813 7 7 ellipse_path stroke
+grestore
+% 275
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+735 791 7 7 ellipse_path stroke
+grestore
+% 0--275
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 787 810 moveto
+776 806 753 798 742 794 curveto
+stroke
+grestore
+% 253
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+775 880 7 7 ellipse_path stroke
+grestore
+% 0--253
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 792 820 moveto
+788 833 781 860 777 873 curveto
+stroke
+grestore
+% 245
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+746 810 7 7 ellipse_path stroke
+grestore
+% 0--245
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 787 813 moveto
+778 812 762 811 753 811 curveto
+stroke
+grestore
+% 229
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+861 802 7 7 ellipse_path stroke
+grestore
+% 0--229
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 801 812 moveto
+814 810 841 805 854 803 curveto
+stroke
+grestore
+% 215
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+745 891 7 7 ellipse_path stroke
+grestore
+% 0--215
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 790 819 moveto
+781 834 758 870 749 885 curveto
+stroke
+grestore
+% 199
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+758 753 7 7 ellipse_path stroke
+grestore
+% 0--199
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 790 807 moveto
+783 795 769 771 762 759 curveto
+stroke
+grestore
+% 184
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+731 825 7 7 ellipse_path stroke
+grestore
+% 0--184
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 787 814 moveto
+775 817 750 821 738 824 curveto
+stroke
+grestore
+% 182
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+806 763 7 7 ellipse_path stroke
+grestore
+% 0--182
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 796 806 moveto
+798 796 802 779 804 770 curveto
+stroke
+grestore
+% 171
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+848 843 7 7 ellipse_path stroke
+grestore
+% 0--171
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 800 816 moveto
+810 822 831 834 842 840 curveto
+stroke
+grestore
+% 166
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+780 744 7 7 ellipse_path stroke
+grestore
+% 0--166
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 793 806 moveto
+790 793 784 764 781 751 curveto
+stroke
+grestore
+% 162
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+852 782 7 7 ellipse_path stroke
+grestore
+% 0--162
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 800 810 moveto
+811 804 834 792 846 785 curveto
+stroke
+grestore
+% 161
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+752 862 7 7 ellipse_path stroke
+grestore
+% 0--161
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 789 819 moveto
+781 828 765 847 757 856 curveto
+stroke
+grestore
+% 151
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+707 847 7 7 ellipse_path stroke
+grestore
+% 0--151
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 787 816 moveto
+771 822 730 838 714 844 curveto
+stroke
+grestore
+% 142
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+796 885 7 7 ellipse_path stroke
+grestore
+% 0--142
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 794 820 moveto
+795 834 796 864 796 878 curveto
+stroke
+grestore
+% 141
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+859 825 7 7 ellipse_path stroke
+grestore
+% 0--141
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 801 814 moveto
+814 816 839 821 852 824 curveto
+stroke
+grestore
+% 128
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+836 770 7 7 ellipse_path stroke
+grestore
+% 0--128
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 799 808 moveto
+807 799 823 783 831 775 curveto
+stroke
+grestore
+% 112
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+720 758 7 7 ellipse_path stroke
+grestore
+% 0--112
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 788 809 moveto
+775 799 740 773 726 762 curveto
+stroke
+grestore
+% 108
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+837 868 7 7 ellipse_path stroke
+grestore
+% 0--108
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 799 819 moveto
+807 830 825 852 833 862 curveto
+stroke
+grestore
+% 107
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+870 860 7 7 ellipse_path stroke
+grestore
+% 0--107
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 800 817 moveto
+814 826 850 847 864 856 curveto
+stroke
+grestore
+% 97
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+912 826 7 7 ellipse_path stroke
+grestore
+% 0--97
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 801 814 moveto
+822 816 884 823 905 825 curveto
+stroke
+grestore
+% 96
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+743 842 7 7 ellipse_path stroke
+grestore
+% 0--96
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 788 817 moveto
+778 822 759 833 749 838 curveto
+stroke
+grestore
+% 92
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+841 806 7 7 ellipse_path stroke
+grestore
+% 0--92
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 801 812 moveto
+810 811 825 808 834 807 curveto
+stroke
+grestore
+% 91
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+827 851 7 7 ellipse_path stroke
+grestore
+% 0--91
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 799 819 moveto
+805 826 816 838 822 846 curveto
+stroke
+grestore
+% 87
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+748 773 7 7 ellipse_path stroke
+grestore
+% 0--87
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 788 808 moveto
+779 800 762 785 753 778 curveto
+stroke
+grestore
+% 78
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+801 865 7 7 ellipse_path stroke
+grestore
+% 0--78
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 795 820 moveto
+796 830 799 848 800 858 curveto
+stroke
+grestore
+% 72
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+706 783 7 7 ellipse_path stroke
+grestore
+% 0--72
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 787 811 moveto
+770 805 730 791 713 785 curveto
+stroke
+grestore
+% 63
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+801 743 7 7 ellipse_path stroke
+grestore
+% 0--63
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 795 806 moveto
+796 793 799 764 800 750 curveto
+stroke
+grestore
+% 52
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+773 859 7 7 ellipse_path stroke
+grestore
+% 0--52
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 791 819 moveto
+787 828 780 843 776 852 curveto
+stroke
+grestore
+% 48
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+702 811 7 7 ellipse_path stroke
+grestore
+% 0--48
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 787 813 moveto
+770 812 726 811 709 811 curveto
+stroke
+grestore
+% 45
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+886 758 7 7 ellipse_path stroke
+grestore
+% 0--45
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 800 809 moveto
+817 799 863 772 880 762 curveto
+stroke
+grestore
+% 43
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+775 766 7 7 ellipse_path stroke
+grestore
+% 0--43
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 791 806 moveto
+788 798 781 782 778 773 curveto
+stroke
+grestore
+% 36
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+847 627 7 7 ellipse_path stroke
+grestore
+% 0--36
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 796 806 moveto
+805 777 837 664 845 634 curveto
+stroke
+grestore
+% 33
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+721 871 7 7 ellipse_path stroke
+grestore
+% 0--33
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 788 818 moveto
+774 828 740 856 726 867 curveto
+stroke
+grestore
+% 23
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+818 879 7 7 ellipse_path stroke
+grestore
+% 0--23
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 797 820 moveto
+802 833 811 860 816 872 curveto
+stroke
+grestore
+% 21
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+769 646 7 7 ellipse_path stroke
+grestore
+% 0--21
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 793 806 moveto
+789 779 774 680 770 653 curveto
+stroke
+grestore
+% 19
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+567 597 7 7 ellipse_path stroke
+grestore
+% 0--19
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 789 808 moveto
+758 779 604 632 572 602 curveto
+stroke
+grestore
+% 12
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+851 715 7 7 ellipse_path stroke
+grestore
+% 0--12
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 798 807 moveto
+808 789 837 739 847 721 curveto
+stroke
+grestore
+% 9
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+949 646 7 7 ellipse_path stroke
+grestore
+% 0--9
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 799 808 moveto
+822 783 920 677 944 651 curveto
+stroke
+grestore
+% 6
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+588 839 7 7 ellipse_path stroke
+grestore
+% 0--6
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 787 814 moveto
+755 818 627 834 595 838 curveto
+stroke
+grestore
+% 4
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+962 766 7 7 ellipse_path stroke
+grestore
+% 0--4
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 801 811 moveto
+828 803 927 776 955 768 curveto
+stroke
+grestore
+% 3
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+721 709 7 7 ellipse_path stroke
+grestore
+% 0--3
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 790 807 moveto
+777 789 738 733 725 715 curveto
+stroke
+grestore
+% 2
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+825 753 7 7 ellipse_path stroke
+grestore
+% 0--2
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 797 807 moveto
+803 795 815 771 822 760 curveto
+stroke
+grestore
+% 1
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+913 1214 7 7 ellipse_path stroke
+grestore
+% 0--1
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 796 820 moveto
+811 869 897 1159 911 1207 curveto
+stroke
+grestore
+% 217
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+704 948 7 7 ellipse_path stroke
+grestore
+% 215--217
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 741 897 moveto
+733 908 716 931 708 942 curveto
+stroke
+grestore
+% 186
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+641 874 7 7 ellipse_path stroke
+grestore
+% 151--186
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 700 850 moveto
+688 855 660 866 648 871 curveto
+stroke
+grestore
+% 146
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+660 719 7 7 ellipse_path stroke
+grestore
+% 112--146
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 714 754 moveto
+703 746 677 730 666 723 curveto
+stroke
+grestore
+% 240
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+928 893 7 7 ellipse_path stroke
+grestore
+% 107--240
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 876 864 moveto
+887 870 910 883 922 889 curveto
+stroke
+grestore
+% 232
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+978 841 7 7 ellipse_path stroke
+grestore
+% 97--232
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 919 828 moveto
+932 830 959 836 971 839 curveto
+stroke
+grestore
+% 115
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1006 834 7 7 ellipse_path stroke
+grestore
+% 97--115
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 919 827 moveto
+937 828 981 832 999 833 curveto
+stroke
+grestore
+% 298
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+637 760 7 7 ellipse_path stroke
+grestore
+% 72--298
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 699 781 moveto
+686 776 657 767 644 762 curveto
+stroke
+grestore
+% 158
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+632 808 7 7 ellipse_path stroke
+grestore
+% 48--158
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 695 811 moveto
+682 810 653 809 639 808 curveto
+stroke
+grestore
+% 218
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+965 710 7 7 ellipse_path stroke
+grestore
+% 45--218
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 892 754 moveto
+907 745 944 723 959 714 curveto
+stroke
+grestore
+% 95
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+866 517 7 7 ellipse_path stroke
+grestore
+% 36--95
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 848 620 moveto
+851 600 861 544 865 524 curveto
+stroke
+grestore
+% 70
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+868 560 7 7 ellipse_path stroke
+grestore
+% 36--70
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 849 620 moveto
+854 607 862 580 866 567 curveto
+stroke
+grestore
+% 47
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+897 484 7 7 ellipse_path stroke
+grestore
+% 36--47
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 849 620 moveto
+857 596 886 515 895 491 curveto
+stroke
+grestore
+% 248
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+664 915 7 7 ellipse_path stroke
+grestore
+% 33--248
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 715 875 moveto
+704 884 681 902 670 911 curveto
+stroke
+grestore
+% 257
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+784 578 7 7 ellipse_path stroke
+grestore
+% 21--257
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 771 639 moveto
+773 626 779 598 782 585 curveto
+stroke
+grestore
+% 168
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+765 573 7 7 ellipse_path stroke
+grestore
+% 21--168
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 769 639 moveto
+768 625 766 594 765 580 curveto
+stroke
+grestore
+% 94
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+749 582 7 7 ellipse_path stroke
+grestore
+% 21--94
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 767 639 moveto
+763 627 755 601 751 589 curveto
+stroke
+grestore
+% 55
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+755 520 7 7 ellipse_path stroke
+grestore
+% 21--55
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 768 639 moveto
+766 617 758 549 756 527 curveto
+stroke
+grestore
+% 26
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+730 587 7 7 ellipse_path stroke
+grestore
+% 21--26
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 765 640 moveto
+758 629 742 605 734 593 curveto
+stroke
+grestore
+% 239
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+524 547 7 7 ellipse_path stroke
+grestore
+% 19--239
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 562 592 moveto
+554 582 537 562 529 553 curveto
+stroke
+grestore
+% 238
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+506 577 7 7 ellipse_path stroke
+grestore
+% 19--238
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 560 595 moveto
+548 591 525 583 513 579 curveto
+stroke
+grestore
+% 68
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+532 504 7 7 ellipse_path stroke
+grestore
+% 19--68
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 564 590 moveto
+558 573 541 528 534 511 curveto
+stroke
+grestore
+% 66
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+491 555 7 7 ellipse_path stroke
+grestore
+% 19--66
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 561 594 moveto
+547 586 511 566 497 558 curveto
+stroke
+grestore
+% 22
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+356 401 7 7 ellipse_path stroke
+grestore
+% 19--22
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 562 592 moveto
+532 565 391 434 361 406 curveto
+stroke
+grestore
+% 294
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+901 671 7 7 ellipse_path stroke
+grestore
+% 12--294
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 856 710 moveto
+866 702 886 684 895 676 curveto
+stroke
+grestore
+% 228
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+886 655 7 7 ellipse_path stroke
+grestore
+% 12--228
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 855 709 moveto
+862 697 876 673 882 661 curveto
+stroke
+grestore
+% 90
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+866 650 7 7 ellipse_path stroke
+grestore
+% 12--90
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 853 708 moveto
+855 695 861 670 864 657 curveto
+stroke
+grestore
+% 183
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1015 614 7 7 ellipse_path stroke
+grestore
+% 9--183
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 956 643 moveto
+968 637 996 623 1008 617 curveto
+stroke
+grestore
+% 100
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1000 599 7 7 ellipse_path stroke
+grestore
+% 9--100
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 954 641 moveto
+965 632 985 613 995 604 curveto
+stroke
+grestore
+% 56
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1067 515 7 7 ellipse_path stroke
+grestore
+% 9--56
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 954 641 moveto
+973 619 1043 541 1062 520 curveto
+stroke
+grestore
+% 51
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+974 577 7 7 ellipse_path stroke
+grestore
+% 9--51
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 951 639 moveto
+956 626 967 597 972 584 curveto
+stroke
+grestore
+% 29
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+992 583 7 7 ellipse_path stroke
+grestore
+% 9--29
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 953 640 moveto
+961 629 980 601 988 589 curveto
+stroke
+grestore
+% 16
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1028 583 7 7 ellipse_path stroke
+grestore
+% 9--16
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 955 641 moveto
+969 630 1008 599 1022 587 curveto
+stroke
+grestore
+% 278
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+519 838 7 7 ellipse_path stroke
+grestore
+% 6--278
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 581 839 moveto
+568 839 539 838 526 838 curveto
+stroke
+grestore
+% 266
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+530 878 7 7 ellipse_path stroke
+grestore
+% 6--266
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 582 843 moveto
+571 851 547 866 536 874 curveto
+stroke
+grestore
+% 225
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+522 816 7 7 ellipse_path stroke
+grestore
+% 6--225
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 581 837 moveto
+568 833 541 823 529 818 curveto
+stroke
+grestore
+% 193
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+521 859 7 7 ellipse_path stroke
+grestore
+% 6--193
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 581 841 moveto
+568 845 541 853 528 857 curveto
+stroke
+grestore
+% 69
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+479 846 7 7 ellipse_path stroke
+grestore
+% 6--69
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 581 839 moveto
+561 841 506 844 486 846 curveto
+stroke
+grestore
+% 67
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+440 861 7 7 ellipse_path stroke
+grestore
+% 6--67
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 581 840 moveto
+556 843 472 856 447 860 curveto
+stroke
+grestore
+% 250
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1037 758 7 7 ellipse_path stroke
+grestore
+% 4--250
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 969 765 moveto
+984 763 1016 760 1030 759 curveto
+stroke
+grestore
+% 196
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1022 725 7 7 ellipse_path stroke
+grestore
+% 4--196
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 968 762 moveto
+979 754 1005 737 1016 729 curveto
+stroke
+grestore
+% 179
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1032 775 7 7 ellipse_path stroke
+grestore
+% 4--179
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 969 767 moveto
+983 769 1011 772 1025 774 curveto
+stroke
+grestore
+% 159
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1026 743 7 7 ellipse_path stroke
+grestore
+% 4--159
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 969 764 moveto
+981 760 1007 750 1019 745 curveto
+stroke
+grestore
+% 64
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1085 725 7 7 ellipse_path stroke
+grestore
+% 4--64
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 969 764 moveto
+991 757 1057 734 1078 727 curveto
+stroke
+grestore
+% 116
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+673 660 7 7 ellipse_path stroke
+grestore
+% 3--116
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 716 704 moveto
+706 694 687 674 678 665 curveto
+stroke
+grestore
+% 30
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+665 621 7 7 ellipse_path stroke
+grestore
+% 3--30
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 717 703 moveto
+707 687 679 644 669 627 curveto
+stroke
+grestore
+% 281
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+909 1273 7 7 ellipse_path stroke
+grestore
+% 1--281
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 913 1221 moveto
+912 1233 910 1254 909 1266 curveto
+stroke
+grestore
+% 260
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+930 1268 7 7 ellipse_path stroke
+grestore
+% 1--260
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 915 1221 moveto
+919 1232 925 1251 928 1261 curveto
+stroke
+grestore
+% 258
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+858 1202 7 7 ellipse_path stroke
+grestore
+% 1--258
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 906 1212 moveto
+895 1210 876 1206 865 1203 curveto
+stroke
+grestore
+% 249
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+911 1167 7 7 ellipse_path stroke
+grestore
+% 1--249
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 913 1207 moveto
+912 1198 912 1183 911 1174 curveto
+stroke
+grestore
+% 237
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+889 1268 7 7 ellipse_path stroke
+grestore
+% 1--237
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 910 1221 moveto
+906 1231 897 1251 892 1261 curveto
+stroke
+grestore
+% 214
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+865 1240 7 7 ellipse_path stroke
+grestore
+% 1--214
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 907 1217 moveto
+898 1222 880 1232 871 1237 curveto
+stroke
+grestore
+% 167
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+960 1227 7 7 ellipse_path stroke
+grestore
+% 1--167
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 920 1216 moveto
+929 1219 944 1223 953 1225 curveto
+stroke
+grestore
+% 160
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+853 1223 7 7 ellipse_path stroke
+grestore
+% 1--160
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 906 1215 moveto
+894 1217 872 1220 860 1222 curveto
+stroke
+grestore
+% 44
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+990 1314 7 7 ellipse_path stroke
+grestore
+% 1--44
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 917 1220 moveto
+931 1237 972 1290 986 1308 curveto
+stroke
+grestore
+% 38
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+908 1348 7 7 ellipse_path stroke
+grestore
+% 1--38
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 913 1221 moveto
+912 1244 909 1317 908 1341 curveto
+stroke
+grestore
+% 35
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+950 1253 7 7 ellipse_path stroke
+grestore
+% 1--35
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 918 1219 moveto
+925 1227 938 1240 945 1248 curveto
+stroke
+grestore
+% 27
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1037 1265 7 7 ellipse_path stroke
+grestore
+% 1--27
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 920 1217 moveto
+941 1225 1009 1253 1030 1262 curveto
+stroke
+grestore
+% 20
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1143 1238 7 7 ellipse_path stroke
+grestore
+% 1--20
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 920 1215 moveto
+954 1219 1102 1234 1136 1237 curveto
+stroke
+grestore
+% 17
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+870 1259 7 7 ellipse_path stroke
+grestore
+% 1--17
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 908 1219 moveto
+900 1228 883 1245 875 1254 curveto
+stroke
+grestore
+% 15
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1056 1385 7 7 ellipse_path stroke
+grestore
+% 1--15
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 918 1220 moveto
+940 1245 1030 1354 1051 1379 curveto
+stroke
+grestore
+% 13
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+780 1507 7 7 ellipse_path stroke
+grestore
+% 1--13
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 910 1220 moveto
+893 1259 801 1461 783 1500 curveto
+stroke
+grestore
+% 11
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+998 1177 7 7 ellipse_path stroke
+grestore
+% 1--11
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 920 1211 moveto
+936 1204 975 1187 991 1180 curveto
+stroke
+grestore
+% 10
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+808 1282 7 7 ellipse_path stroke
+grestore
+% 1--10
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 907 1218 moveto
+889 1230 832 1266 814 1278 curveto
+stroke
+grestore
+% 8
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+945 1178 7 7 ellipse_path stroke
+grestore
+% 1--8
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 918 1209 moveto
+924 1202 934 1191 940 1184 curveto
+stroke
+grestore
+% 7
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+875 1181 7 7 ellipse_path stroke
+grestore
+% 1--7
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 907 1209 moveto
+900 1203 888 1192 880 1186 curveto
+stroke
+grestore
+% 5
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+982 1200 7 7 ellipse_path stroke
+grestore
+% 1--5
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 920 1213 moveto
+933 1210 962 1204 975 1201 curveto
+stroke
+grestore
+% 286
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1016 1371 7 7 ellipse_path stroke
+grestore
+% 44--286
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 993 1321 moveto
+998 1332 1008 1354 1013 1365 curveto
+stroke
+grestore
+% 99
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+994 1377 7 7 ellipse_path stroke
+grestore
+% 44--99
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 990 1321 moveto
+991 1333 993 1358 994 1370 curveto
+stroke
+grestore
+% 75
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1072 1378 7 7 ellipse_path stroke
+grestore
+% 44--75
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 996 1318 moveto
+1010 1330 1051 1362 1066 1373 curveto
+stroke
+grestore
+% 296
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+920 1410 7 7 ellipse_path stroke
+grestore
+% 38--296
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 909 1355 moveto
+912 1367 916 1391 919 1403 curveto
+stroke
+grestore
+% 269
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+895 1412 7 7 ellipse_path stroke
+grestore
+% 38--269
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 907 1355 moveto
+904 1368 899 1393 896 1405 curveto
+stroke
+grestore
+% 181
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+873 1403 7 7 ellipse_path stroke
+grestore
+% 38--181
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 904 1354 moveto
+897 1365 884 1386 877 1397 curveto
+stroke
+grestore
+% 74
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+920 1450 7 7 ellipse_path stroke
+grestore
+% 38--74
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 909 1355 moveto
+911 1374 917 1424 919 1443 curveto
+stroke
+grestore
+% 230
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1093 1240 7 7 ellipse_path stroke
+grestore
+% 27--230
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1043 1262 moveto
+1054 1258 1076 1248 1087 1243 curveto
+stroke
+grestore
+% 219
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1100 1260 7 7 ellipse_path stroke
+grestore
+% 27--219
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1044 1264 moveto
+1056 1263 1081 1261 1093 1261 curveto
+stroke
+grestore
+% 206
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1105 1278 7 7 ellipse_path stroke
+grestore
+% 27--206
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1044 1266 moveto
+1057 1269 1085 1274 1098 1277 curveto
+stroke
+grestore
+% 150
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1102 1300 7 7 ellipse_path stroke
+grestore
+% 27--150
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1043 1268 moveto
+1056 1275 1083 1290 1096 1296 curveto
+stroke
+grestore
+% 132
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1063 1319 7 7 ellipse_path stroke
+grestore
+% 27--132
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1040 1272 moveto
+1045 1282 1055 1302 1060 1313 curveto
+stroke
+grestore
+% 80
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1085 1315 7 7 ellipse_path stroke
+grestore
+% 27--80
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1042 1270 moveto
+1052 1280 1071 1300 1080 1310 curveto
+stroke
+grestore
+% 40
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1085 1291 7 7 ellipse_path stroke
+grestore
+% 27--40
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1043 1268 moveto
+1052 1273 1070 1283 1079 1288 curveto
+stroke
+grestore
+% 270
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1211 1247 7 7 ellipse_path stroke
+grestore
+% 20--270
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1150 1239 moveto
+1163 1241 1191 1244 1204 1246 curveto
+stroke
+grestore
+% 188
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1207 1210 7 7 ellipse_path stroke
+grestore
+% 20--188
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1150 1235 moveto
+1162 1230 1188 1218 1200 1213 curveto
+stroke
+grestore
+% 130
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1333 1260 7 7 ellipse_path stroke
+grestore
+% 20--130
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1150 1239 moveto
+1180 1242 1296 1256 1326 1259 curveto
+stroke
+grestore
+% 65
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1234 1262 7 7 ellipse_path stroke
+grestore
+% 20--65
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1150 1240 moveto
+1167 1244 1210 1256 1227 1260 curveto
+stroke
+grestore
+% 62
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1204 1271 7 7 ellipse_path stroke
+grestore
+% 20--62
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1150 1242 moveto
+1161 1248 1186 1261 1198 1268 curveto
+stroke
+grestore
+% 53
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1215 1228 7 7 ellipse_path stroke
+grestore
+% 20--53
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1150 1237 moveto
+1164 1235 1194 1231 1208 1229 curveto
+stroke
+grestore
+% 82
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1197 1522 7 7 ellipse_path stroke
+grestore
+% 15--82
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1061 1390 moveto
+1084 1412 1170 1496 1192 1517 curveto
+stroke
+grestore
+% 59
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1083 1447 7 7 ellipse_path stroke
+grestore
+% 15--59
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1059 1392 moveto
+1064 1404 1075 1428 1080 1440 curveto
+stroke
+grestore
+% 39
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1105 1478 7 7 ellipse_path stroke
+grestore
+% 15--39
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1059 1391 moveto
+1068 1408 1093 1455 1102 1472 curveto
+stroke
+grestore
+% 174
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+778 1566 7 7 ellipse_path stroke
+grestore
+% 13--174
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 780 1514 moveto
+779 1526 779 1547 778 1559 curveto
+stroke
+grestore
+% 88
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+736 1542 7 7 ellipse_path stroke
+grestore
+% 13--88
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 774 1512 moveto
+765 1518 750 1531 742 1538 curveto
+stroke
+grestore
+% 61
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+742 1572 7 7 ellipse_path stroke
+grestore
+% 13--61
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 776 1513 moveto
+769 1526 753 1554 746 1566 curveto
+stroke
+grestore
+% 50
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+737 1647 7 7 ellipse_path stroke
+grestore
+% 13--50
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 778 1514 moveto
+770 1538 746 1616 739 1640 curveto
+stroke
+grestore
+% 25
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+600 1650 7 7 ellipse_path stroke
+grestore
+% 13--25
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 774 1511 moveto
+748 1533 632 1625 606 1646 curveto
+stroke
+grestore
+% 14
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+811 1711 7 7 ellipse_path stroke
+grestore
+% 13--14
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 781 1514 moveto
+786 1546 805 1673 810 1704 curveto
+stroke
+grestore
+% 60
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1076 1147 7 7 ellipse_path stroke
+grestore
+% 11--60
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1005 1174 moveto
+1020 1169 1055 1155 1069 1150 curveto
+stroke
+grestore
+% 254
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+744 1284 7 7 ellipse_path stroke
+grestore
+% 10--254
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 801 1282 moveto
+789 1283 764 1283 751 1284 curveto
+stroke
+grestore
+% 234
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+744 1304 7 7 ellipse_path stroke
+grestore
+% 10--234
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 801 1284 moveto
+789 1289 763 1298 751 1302 curveto
+stroke
+grestore
+% 203
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+749 1322 7 7 ellipse_path stroke
+grestore
+% 10--203
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 802 1286 moveto
+791 1294 766 1310 755 1318 curveto
+stroke
+grestore
+% 83
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+765 1326 7 7 ellipse_path stroke
+grestore
+% 10--83
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 803 1287 moveto
+795 1296 779 1312 770 1321 curveto
+stroke
+grestore
+% 37
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+780 1342 7 7 ellipse_path stroke
+grestore
+% 10--37
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 805 1288 moveto
+800 1300 789 1324 783 1335 curveto
+stroke
+grestore
+% 131
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1040 1185 7 7 ellipse_path stroke
+grestore
+% 5--131
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 989 1198 moveto
+1001 1195 1022 1190 1033 1187 curveto
+stroke
+grestore
+% 178
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+621 568 7 7 ellipse_path stroke
+grestore
+% 30--178
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 660 615 moveto
+652 605 634 584 626 574 curveto
+stroke
+grestore
+% 34
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+641 554 7 7 ellipse_path stroke
+grestore
+% 30--34
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 663 614 moveto
+658 601 648 573 643 561 curveto
+stroke
+grestore
+% 233
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1161 719 7 7 ellipse_path stroke
+grestore
+% 64--233
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1092 724 moveto
+1107 723 1139 721 1154 720 curveto
+stroke
+grestore
+% 197
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1150 684 7 7 ellipse_path stroke
+grestore
+% 64--197
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1091 721 moveto
+1103 713 1131 696 1144 688 curveto
+stroke
+grestore
+% 152
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1159 700 7 7 ellipse_path stroke
+grestore
+% 64--152
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1092 723 moveto
+1106 718 1138 707 1152 702 curveto
+stroke
+grestore
+% 268
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+407 838 7 7 ellipse_path stroke
+grestore
+% 69--268
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 472 845 moveto
+458 843 428 840 414 839 curveto
+stroke
+grestore
+% 85
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+408 864 7 7 ellipse_path stroke
+grestore
+% 69--85
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 472 848 moveto
+458 851 429 859 415 862 curveto
+stroke
+grestore
+% 77
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+301 880 7 7 ellipse_path stroke
+grestore
+% 67--77
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 433 862 moveto
+409 865 332 876 308 879 curveto
+stroke
+grestore
+% 143
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1137 454 7 7 ellipse_path stroke
+grestore
+% 56--143
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1072 510 moveto
+1086 499 1119 470 1132 459 curveto
+stroke
+grestore
+% 76
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1162 401 7 7 ellipse_path stroke
+grestore
+% 56--76
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1072 510 moveto
+1088 491 1142 426 1157 406 curveto
+stroke
+grestore
+% 114
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1090 538 7 7 ellipse_path stroke
+grestore
+% 16--114
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1034 579 moveto
+1045 571 1072 551 1084 542 curveto
+stroke
+grestore
+% 157
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1141 1126 7 7 ellipse_path stroke
+grestore
+% 60--157
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1083 1145 moveto
+1096 1141 1122 1132 1134 1128 curveto
+stroke
+grestore
+% 89
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+708 1621 7 7 ellipse_path stroke
+grestore
+% 61--89
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 738 1578 moveto
+731 1587 719 1606 712 1615 curveto
+stroke
+grestore
+% 106
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+692 1780 7 7 ellipse_path stroke
+grestore
+% 50--106
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 735 1654 moveto
+727 1677 702 1750 694 1773 curveto
+stroke
+grestore
+% 289
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+551 1676 7 7 ellipse_path stroke
+grestore
+% 25--289
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 594 1653 moveto
+584 1658 567 1668 557 1673 curveto
+stroke
+grestore
+% 261
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+586 1694 7 7 ellipse_path stroke
+grestore
+% 25--261
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 598 1657 moveto
+595 1665 591 1679 588 1687 curveto
+stroke
+grestore
+% 180
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+527 1761 7 7 ellipse_path stroke
+grestore
+% 25--180
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 596 1656 moveto
+583 1675 544 1736 531 1755 curveto
+stroke
+grestore
+% 170
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+534 1651 7 7 ellipse_path stroke
+grestore
+% 25--170
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 593 1650 moveto
+580 1650 554 1651 541 1651 curveto
+stroke
+grestore
+% 154
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+521 1721 7 7 ellipse_path stroke
+grestore
+% 25--154
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 595 1655 moveto
+580 1668 541 1703 526 1716 curveto
+stroke
+grestore
+% 137
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+533 1671 7 7 ellipse_path stroke
+grestore
+% 25--137
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 593 1652 moveto
+580 1657 553 1665 540 1669 curveto
+stroke
+grestore
+% 134
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+572 1711 7 7 ellipse_path stroke
+grestore
+% 25--134
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 597 1657 moveto
+592 1668 581 1692 575 1704 curveto
+stroke
+grestore
+% 58
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+599 1714 7 7 ellipse_path stroke
+grestore
+% 25--58
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 600 1657 moveto
+600 1669 599 1694 599 1707 curveto
+stroke
+grestore
+% 42
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+542 1632 7 7 ellipse_path stroke
+grestore
+% 25--42
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 593 1648 moveto
+581 1644 560 1638 549 1634 curveto
+stroke
+grestore
+% 32
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+471 1706 7 7 ellipse_path stroke
+grestore
+% 25--32
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 593 1653 moveto
+571 1662 500 1693 478 1703 curveto
+stroke
+grestore
+% 31
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+553 1697 7 7 ellipse_path stroke
+grestore
+% 25--31
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 595 1655 moveto
+586 1664 567 1683 558 1692 curveto
+stroke
+grestore
+% 280
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+837 1768 7 7 ellipse_path stroke
+grestore
+% 14--280
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 814 1718 moveto
+819 1729 829 1751 834 1762 curveto
+stroke
+grestore
+% 148
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+809 1773 7 7 ellipse_path stroke
+grestore
+% 14--148
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 811 1718 moveto
+810 1730 810 1754 809 1766 curveto
+stroke
+grestore
+% 93
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+813 1875 7 7 ellipse_path stroke
+grestore
+% 14--93
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 811 1718 moveto
+811 1745 812 1841 813 1868 curveto
+stroke
+grestore
+% 18
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+861 1824 7 7 ellipse_path stroke
+grestore
+% 14--18
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 814 1718 moveto
+823 1738 849 1798 858 1817 curveto
+stroke
+grestore
+% 256
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+785 1936 7 7 ellipse_path stroke
+grestore
+% 93--256
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 810 1882 moveto
+805 1893 794 1917 788 1929 curveto
+stroke
+grestore
+% 236
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+828 1940 7 7 ellipse_path stroke
+grestore
+% 93--236
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 815 1882 moveto
+817 1895 823 1920 826 1933 curveto
+stroke
+grestore
+% 220
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+826 1970 7 7 ellipse_path stroke
+grestore
+% 93--220
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 814 1882 moveto
+816 1900 823 1945 825 1963 curveto
+stroke
+grestore
+% 216
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+847 1934 7 7 ellipse_path stroke
+grestore
+% 93--216
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 817 1881 moveto
+823 1893 837 1917 843 1928 curveto
+stroke
+grestore
+% 205
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+806 1940 7 7 ellipse_path stroke
+grestore
+% 93--205
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 812 1882 moveto
+811 1895 808 1920 807 1933 curveto
+stroke
+grestore
+% 169
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+797 1970 7 7 ellipse_path stroke
+grestore
+% 93--169
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 812 1882 moveto
+809 1900 801 1945 798 1963 curveto
+stroke
+grestore
+% 200
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+895 1880 7 7 ellipse_path stroke
+grestore
+% 18--200
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 865 1830 moveto
+871 1840 885 1863 891 1874 curveto
+stroke
+grestore
+% 120
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+899 1921 7 7 ellipse_path stroke
+grestore
+% 18--120
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 864 1831 moveto
+870 1849 889 1897 896 1914 curveto
+stroke
+grestore
+% 247
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1224 1588 7 7 ellipse_path stroke
+grestore
+% 82--247
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1200 1529 moveto
+1205 1541 1216 1569 1221 1581 curveto
+stroke
+grestore
+% 208
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1263 1549 7 7 ellipse_path stroke
+grestore
+% 82--208
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1204 1525 moveto
+1216 1530 1244 1541 1256 1546 curveto
+stroke
+grestore
+% 133
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1256 1568 7 7 ellipse_path stroke
+grestore
+% 82--133
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1203 1527 moveto
+1214 1535 1239 1555 1250 1563 curveto
+stroke
+grestore
+% 105
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1239 1573 7 7 ellipse_path stroke
+grestore
+% 82--105
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1201 1527 moveto
+1209 1537 1226 1558 1234 1567 curveto
+stroke
+grestore
+% 86
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1314 1635 7 7 ellipse_path stroke
+grestore
+% 82--86
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1202 1527 moveto
+1222 1546 1290 1611 1309 1630 curveto
+stroke
+grestore
+% 293
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1147 1534 7 7 ellipse_path stroke
+grestore
+% 39--293
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1109 1484 moveto
+1117 1495 1135 1517 1143 1528 curveto
+stroke
+grestore
+% 212
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1127 1546 7 7 ellipse_path stroke
+grestore
+% 39--212
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1107 1485 moveto
+1112 1498 1121 1526 1125 1539 curveto
+stroke
+grestore
+% 187
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+927 2007 7 7 ellipse_path stroke
+grestore
+% 120--187
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 901 1928 moveto
+907 1944 920 1984 925 2000 curveto
+stroke
+grestore
+% 267
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+510 422 7 7 ellipse_path stroke
+grestore
+% 68--267
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 530 497 moveto
+526 481 516 444 512 429 curveto
+stroke
+grestore
+% 213
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+433 524 7 7 ellipse_path stroke
+grestore
+% 66--213
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 485 552 moveto
+474 546 451 534 439 527 curveto
+stroke
+grestore
+% 259
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+359 314 7 7 ellipse_path stroke
+grestore
+% 22--259
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 356 394 moveto
+357 378 358 338 359 321 curveto
+stroke
+grestore
+% 227
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+290 406 7 7 ellipse_path stroke
+grestore
+% 22--227
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 349 402 moveto
+336 403 310 405 297 405 curveto
+stroke
+grestore
+% 204
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+338 347 7 7 ellipse_path stroke
+grestore
+% 22--204
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 354 394 moveto
+350 383 344 364 340 354 curveto
+stroke
+grestore
+% 190
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+314 358 7 7 ellipse_path stroke
+grestore
+% 22--190
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 351 396 moveto
+343 387 327 371 319 363 curveto
+stroke
+grestore
+% 176
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+297 372 7 7 ellipse_path stroke
+grestore
+% 22--176
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 350 398 moveto
+338 392 315 381 303 375 curveto
+stroke
+grestore
+% 156
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+301 423 7 7 ellipse_path stroke
+grestore
+% 22--156
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 349 404 moveto
+339 408 319 416 308 420 curveto
+stroke
+grestore
+% 84
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+322 264 7 7 ellipse_path stroke
+grestore
+% 22--84
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 354 394 moveto
+348 370 329 294 324 271 curveto
+stroke
+grestore
+% 71
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+316 325 7 7 ellipse_path stroke
+grestore
+% 22--71
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 353 395 moveto
+345 381 327 346 319 332 curveto
+stroke
+grestore
+% 57
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+234 330 7 7 ellipse_path stroke
+grestore
+% 22--57
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 350 397 moveto
+329 385 261 346 240 334 curveto
+stroke
+grestore
+% 49
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+304 390 7 7 ellipse_path stroke
+grestore
+% 22--49
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 349 399 moveto
+339 397 321 393 311 391 curveto
+stroke
+grestore
+% 46
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+209 383 7 7 ellipse_path stroke
+grestore
+% 22--46
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 349 400 moveto
+324 397 241 387 216 384 curveto
+stroke
+grestore
+% 28
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+262 282 7 7 ellipse_path stroke
+grestore
+% 22--28
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 351 395 moveto
+336 375 282 308 267 288 curveto
+stroke
+grestore
+% 24
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+365 345 7 7 ellipse_path stroke
+grestore
+% 22--24
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 357 394 moveto
+359 383 362 363 364 352 curveto
+stroke
+grestore
+% 210
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1424 1247 7 7 ellipse_path stroke
+grestore
+% 130--210
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1340 1259 moveto
+1357 1257 1400 1251 1417 1248 curveto
+stroke
+grestore
+% 165
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1398 1250 7 7 ellipse_path stroke
+grestore
+% 130--165
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1340 1259 moveto
+1353 1257 1378 1253 1391 1251 curveto
+stroke
+grestore
+% 145
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1396 1280 7 7 ellipse_path stroke
+grestore
+% 130--145
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1340 1262 moveto
+1352 1266 1377 1274 1389 1278 curveto
+stroke
+grestore
+% 140
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1418 1297 7 7 ellipse_path stroke
+grestore
+% 130--140
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1340 1263 moveto
+1356 1270 1395 1287 1411 1294 curveto
+stroke
+grestore
+% 138
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1467 1278 7 7 ellipse_path stroke
+grestore
+% 130--138
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1340 1261 moveto
+1363 1264 1436 1274 1460 1277 curveto
+stroke
+grestore
+% 155
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1300 1283 7 7 ellipse_path stroke
+grestore
+% 65--155
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1241 1264 moveto
+1254 1269 1281 1277 1293 1281 curveto
+stroke
+grestore
+% 209
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+746 444 7 7 ellipse_path stroke
+grestore
+% 55--209
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 754 513 moveto
+752 498 749 466 747 451 curveto
+stroke
+grestore
+% 198
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+765 446 7 7 ellipse_path stroke
+grestore
+% 55--198
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 756 513 moveto
+758 499 762 468 764 453 curveto
+stroke
+grestore
+% 129
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+728 451 7 7 ellipse_path stroke
+grestore
+% 55--129
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 752 513 moveto
+747 500 736 471 731 458 curveto
+stroke
+grestore
+% 279
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+362 245 7 7 ellipse_path stroke
+grestore
+% 259--279
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 359 307 moveto
+360 294 361 265 362 252 curveto
+stroke
+grestore
+% 192
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+323 191 7 7 ellipse_path stroke
+grestore
+% 84--192
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 322 257 moveto
+322 243 323 212 323 198 curveto
+stroke
+grestore
+% 126
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+287 160 7 7 ellipse_path stroke
+grestore
+% 84--126
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 320 257 moveto
+313 238 296 185 289 167 curveto
+stroke
+grestore
+% 111
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+300 196 7 7 ellipse_path stroke
+grestore
+% 84--111
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 320 257 moveto
+315 244 306 216 302 203 curveto
+stroke
+grestore
+% 135
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+288 263 7 7 ellipse_path stroke
+grestore
+% 71--135
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 313 318 moveto
+308 306 297 282 291 270 curveto
+stroke
+grestore
+% 284
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+169 306 7 7 ellipse_path stroke
+grestore
+% 57--284
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 227 327 moveto
+214 323 188 313 176 308 curveto
+stroke
+grestore
+% 202
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+180 286 7 7 ellipse_path stroke
+grestore
+% 57--202
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 228 325 moveto
+218 317 196 299 186 291 curveto
+stroke
+grestore
+% 127
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+138 270 7 7 ellipse_path stroke
+grestore
+% 57--127
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 228 326 moveto
+211 315 161 284 144 274 curveto
+stroke
+grestore
+% 276
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+142 394 7 7 ellipse_path stroke
+grestore
+% 46--276
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 202 384 moveto
+189 386 162 391 149 393 curveto
+stroke
+grestore
+% 226
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+118 352 7 7 ellipse_path stroke
+grestore
+% 46--226
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 202 381 moveto
+185 375 142 360 125 354 curveto
+stroke
+grestore
+% 153
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+146 365 7 7 ellipse_path stroke
+grestore
+% 46--153
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 202 381 moveto
+190 377 165 370 153 367 curveto
+stroke
+grestore
+% 124
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+114 379 7 7 ellipse_path stroke
+grestore
+% 46--124
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 202 383 moveto
+184 382 139 380 121 379 curveto
+stroke
+grestore
+% 272
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+236 214 7 7 ellipse_path stroke
+grestore
+% 28--272
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 259 275 moveto
+254 262 244 234 239 221 curveto
+stroke
+grestore
+% 104
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+193 192 7 7 ellipse_path stroke
+grestore
+% 28--104
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 258 276 moveto
+246 260 210 214 197 198 curveto
+stroke
+grestore
+% 73
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+204 238 7 7 ellipse_path stroke
+grestore
+% 28--73
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 256 278 moveto
+245 269 221 251 210 242 curveto
+stroke
+grestore
+% 41
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+221 230 7 7 ellipse_path stroke
+grestore
+% 28--41
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 258 276 moveto
+250 266 233 246 225 236 curveto
+stroke
+grestore
+% 265
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+493 1822 7 7 ellipse_path stroke
+grestore
+% 180--265
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 523 1768 moveto
+517 1779 503 1804 497 1816 curveto
+stroke
+grestore
+% 211
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+464 1852 7 7 ellipse_path stroke
+grestore
+% 180--211
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 523 1767 moveto
+512 1783 480 1829 468 1846 curveto
+stroke
+grestore
+% 207
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+454 1785 7 7 ellipse_path stroke
+grestore
+% 154--207
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 516 1726 moveto
+503 1738 472 1768 459 1780 curveto
+stroke
+grestore
+% 295
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+401 1712 7 7 ellipse_path stroke
+grestore
+% 32--295
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 464 1707 moveto
+451 1708 422 1710 408 1711 curveto
+stroke
+grestore
+% 195
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+386 1752 7 7 ellipse_path stroke
+grestore
+% 32--195
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 465 1709 moveto
+449 1718 408 1740 392 1748 curveto
+stroke
+grestore
+% 164
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+419 1753 7 7 ellipse_path stroke
+grestore
+% 32--164
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 465 1711 moveto
+455 1720 434 1739 424 1748 curveto
+stroke
+grestore
+% 81
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+407 1733 7 7 ellipse_path stroke
+grestore
+% 32--81
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 464 1709 moveto
+452 1714 426 1725 414 1730 curveto
+stroke
+grestore
+% 290
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+156 127 7 7 ellipse_path stroke
+grestore
+% 104--290
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 189 186 moveto
+182 173 167 146 160 133 curveto
+stroke
+grestore
+% 177
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+138 141 7 7 ellipse_path stroke
+grestore
+% 104--177
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 188 187 moveto
+177 177 154 155 143 146 curveto
+stroke
+grestore
+% 299
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+322 1789 7 7 ellipse_path stroke
+grestore
+% 195--299
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 380 1756 moveto
+367 1763 340 1778 328 1785 curveto
+stroke
+grestore
+% 123
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+888 447 7 7 ellipse_path stroke
+grestore
+% 95--123
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 868 510 moveto
+873 497 882 468 886 454 curveto
+stroke
+grestore
+% 119
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+866 443 7 7 ellipse_path stroke
+grestore
+% 95--119
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 866 510 moveto
+866 496 866 465 866 450 curveto
+stroke
+grestore
+% 189
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+936 419 7 7 ellipse_path stroke
+grestore
+% 47--189
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 901 478 moveto
+909 465 925 437 932 425 curveto
+stroke
+grestore
+% 139
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+914 410 7 7 ellipse_path stroke
+grestore
+% 47--139
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 899 477 moveto
+902 463 909 431 912 417 curveto
+stroke
+grestore
+% 54
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+931 373 7 7 ellipse_path stroke
+grestore
+% 47--54
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 899 477 moveto
+906 457 923 400 929 380 curveto
+stroke
+grestore
+% 222
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+917 1518 7 7 ellipse_path stroke
+grestore
+% 74--222
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 920 1457 moveto
+919 1470 918 1498 917 1511 curveto
+stroke
+grestore
+% 121
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+941 1515 7 7 ellipse_path stroke
+grestore
+% 74--121
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 922 1457 moveto
+927 1470 935 1496 939 1508 curveto
+stroke
+grestore
+% 201
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1133 1414 7 7 ellipse_path stroke
+grestore
+% 75--201
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1078 1382 moveto
+1090 1389 1115 1403 1127 1410 curveto
+stroke
+grestore
+% 103
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1118 1431 7 7 ellipse_path stroke
+grestore
+% 75--103
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1077 1384 moveto
+1086 1394 1105 1415 1113 1425 curveto
+stroke
+grestore
+% 252
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1030 672 7 7 ellipse_path stroke
+grestore
+% 218--252
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 971 706 moveto
+984 699 1012 683 1024 676 curveto
+stroke
+grestore
+% 255
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+48 327 7 7 ellipse_path stroke
+grestore
+% 226--255
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 111 350 moveto
+98 345 68 334 55 329 curveto
+stroke
+grestore
+% 221
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+41 370 7 7 ellipse_path stroke
+grestore
+% 124--221
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 107 378 moveto
+93 376 62 373 48 371 curveto
+stroke
+grestore
+% 282
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+942 298 7 7 ellipse_path stroke
+grestore
+% 54--282
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 932 366 moveto
+934 351 939 319 941 305 curveto
+stroke
+grestore
+% 102
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+963 304 7 7 ellipse_path stroke
+grestore
+% 54--102
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 934 367 moveto
+940 354 954 324 960 311 curveto
+stroke
+grestore
+% 243
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+693 1844 7 7 ellipse_path stroke
+grestore
+% 106--243
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 692 1787 moveto
+692 1799 693 1824 693 1837 curveto
+stroke
+grestore
+% 147
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+663 1835 7 7 ellipse_path stroke
+grestore
+% 106--147
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 689 1786 moveto
+683 1797 672 1818 666 1829 curveto
+stroke
+grestore
+% 122
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+648 1861 7 7 ellipse_path stroke
+grestore
+% 106--122
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 689 1786 moveto
+680 1801 660 1839 652 1854 curveto
+stroke
+grestore
+% 110
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+673 1870 7 7 ellipse_path stroke
+grestore
+% 106--110
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 691 1787 moveto
+687 1804 678 1846 675 1863 curveto
+stroke
+grestore
+% 175
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1195 409 7 7 ellipse_path stroke
+grestore
+% 143--175
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1143 450 moveto
+1154 441 1178 422 1189 413 curveto
+stroke
+grestore
+% 109
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1208 347 7 7 ellipse_path stroke
+grestore
+% 76--109
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1167 396 moveto
+1175 385 1195 363 1203 352 curveto
+stroke
+grestore
+% 79
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1245 304 7 7 ellipse_path stroke
+grestore
+% 76--79
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1167 396 moveto
+1181 379 1225 327 1240 310 curveto
+stroke
+grestore
+% 271
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+81 220 7 7 ellipse_path stroke
+grestore
+% 127--271
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 132 265 moveto
+121 255 97 234 86 225 curveto
+stroke
+grestore
+% 149
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+69 239 7 7 ellipse_path stroke
+grestore
+% 127--149
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 131 267 moveto
+118 261 89 248 75 242 curveto
+stroke
+grestore
+% 251
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+234 889 7 7 ellipse_path stroke
+grestore
+% 77--251
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 294 881 moveto
+281 883 254 886 241 888 curveto
+stroke
+grestore
+% 98
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+179 895 7 7 ellipse_path stroke
+grestore
+% 77--98
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 294 881 moveto
+272 883 207 891 186 894 curveto
+stroke
+grestore
+% 277
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+499 356 7 7 ellipse_path stroke
+grestore
+% 267--277
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 509 415 moveto
+507 402 502 376 500 363 curveto
+stroke
+grestore
+% 283
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1277 243 7 7 ellipse_path stroke
+grestore
+% 79--283
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1248 297 moveto
+1255 286 1268 261 1274 249 curveto
+stroke
+grestore
+% 194
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1300 263 7 7 ellipse_path stroke
+grestore
+% 79--194
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1251 300 moveto
+1262 292 1284 275 1294 267 curveto
+stroke
+grestore
+% 118
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1304 233 7 7 ellipse_path stroke
+grestore
+% 79--118
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1250 298 moveto
+1261 285 1288 252 1299 239 curveto
+stroke
+grestore
+% 223
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+77 908 7 7 ellipse_path stroke
+grestore
+% 98--223
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 172 896 moveto
+153 898 103 905 84 907 curveto
+stroke
+grestore
+% 113
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+114 903 7 7 ellipse_path stroke
+grestore
+% 98--113
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 172 896 moveto
+159 897 134 901 121 902 curveto
+stroke
+grestore
+% 125
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1350 179 7 7 ellipse_path stroke
+grestore
+% 118--125
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1309 228 moveto
+1317 217 1337 195 1345 184 curveto
+stroke
+grestore
+% 173
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1374 1667 7 7 ellipse_path stroke
+grestore
+% 86--173
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1320 1638 moveto
+1332 1645 1356 1657 1367 1664 curveto
+stroke
+grestore
+% 172
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1361 1713 7 7 ellipse_path stroke
+grestore
+% 86--172
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1318 1641 moveto
+1327 1656 1348 1692 1357 1707 curveto
+stroke
+grestore
+% 163
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1355 1686 7 7 ellipse_path stroke
+grestore
+% 86--163
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1318 1640 moveto
+1326 1650 1343 1671 1351 1680 curveto
+stroke
+grestore
+% 101
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1406 1709 7 7 ellipse_path stroke
+grestore
+% 86--101
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1319 1639 moveto
+1335 1652 1383 1691 1400 1704 curveto
+stroke
+grestore
+% 185
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+255 74 7 7 ellipse_path stroke
+grestore
+% 126--185
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 284 153 moveto
+278 137 264 97 258 81 curveto
+stroke
+grestore
+% 263
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1398 1774 7 7 ellipse_path stroke
+grestore
+% 172--263
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1365 1719 moveto
+1372 1731 1387 1756 1394 1768 curveto
+stroke
+grestore
+% 264
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1460 1753 7 7 ellipse_path stroke
+grestore
+% 101--264
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1412 1714 moveto
+1423 1722 1444 1740 1454 1748 curveto
+stroke
+grestore
+% 224
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1445 1769 7 7 ellipse_path stroke
+grestore
+% 101--224
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1410 1715 moveto
+1418 1726 1434 1752 1441 1763 curveto
+stroke
+grestore
+% 144
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1472 1738 7 7 ellipse_path stroke
+grestore
+% 101--144
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1413 1712 moveto
+1425 1717 1453 1730 1465 1735 curveto
+stroke
+grestore
+% 297
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+834 2044 7 7 ellipse_path stroke
+grestore
+% 220--297
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 827 1977 moveto
+829 1991 832 2022 833 2037 curveto
+stroke
+grestore
+% 246
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+787 2043 7 7 ellipse_path stroke
+grestore
+% 169--246
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 796 1977 moveto
+794 1991 790 2022 788 2036 curveto
+stroke
+grestore
+% 291
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1080 836 7 7 ellipse_path stroke
+grestore
+% 115--291
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1013 834 moveto
+1027 835 1058 836 1073 836 curveto
+stroke
+grestore
+% 242
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+8 904 7 7 ellipse_path stroke
+grestore
+% 223--242
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 70 908 moveto
+57 907 28 905 15 904 curveto
+stroke
+grestore
+% 241
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+11 927 7 7 ellipse_path stroke
+grestore
+% 223--241
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 70 910 moveto
+57 914 30 921 18 925 curveto
+stroke
+grestore
+% 136
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+617 1926 7 7 ellipse_path stroke
+grestore
+% 122--136
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 645 1867 moveto
+639 1880 626 1907 620 1920 curveto
+stroke
+grestore
+% 117
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+655 1941 7 7 ellipse_path stroke
+grestore
+% 110--117
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 671 1877 moveto
+668 1891 660 1920 657 1934 curveto
+stroke
+grestore
+% 288
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+946 2075 7 7 ellipse_path stroke
+grestore
+% 187--288
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 929 2014 moveto
+933 2027 940 2055 944 2068 curveto
+stroke
+grestore
+% 285
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+228 8 7 7 ellipse_path stroke
+grestore
+% 185--285
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 252 67 moveto
+247 55 236 27 231 15 curveto
+stroke
+grestore
+% 244
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1495 1235 7 7 ellipse_path stroke
+grestore
+% 210--244
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1431 1246 moveto
+1445 1244 1474 1239 1488 1236 curveto
+stroke
+grestore
+% 287
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1483 1327 7 7 ellipse_path stroke
+grestore
+% 140--287
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1424 1300 moveto
+1437 1306 1464 1318 1477 1324 curveto
+stroke
+grestore
+% 273
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1535 1302 7 7 ellipse_path stroke
+grestore
+% 138--273
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1474 1280 moveto
+1487 1285 1515 1295 1528 1300 curveto
+stroke
+grestore
+% 235
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1562 1291 7 7 ellipse_path stroke
+grestore
+% 138--235
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1474 1279 moveto
+1492 1281 1537 1288 1555 1290 curveto
+stroke
+grestore
+% 191
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1538 1273 7 7 ellipse_path stroke
+grestore
+% 138--191
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1474 1278 moveto
+1488 1276 1517 1274 1531 1273 curveto
+stroke
+grestore
+% 274
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1634 1301 7 7 ellipse_path stroke
+grestore
+% 235--274
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1569 1292 moveto
+1583 1294 1613 1298 1627 1300 curveto
+stroke
+grestore
+% 262
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+400 1834 7 7 ellipse_path stroke
+grestore
+% 207--262
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 449 1790 moveto
+438 1799 416 1820 405 1829 curveto
+stroke
+grestore
+% 292
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+413 1905 7 7 ellipse_path stroke
+grestore
+% 211--292
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 459 1857 moveto
+449 1868 428 1890 418 1900 curveto
+stroke
+grestore
+% 231
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+432 1918 7 7 ellipse_path stroke
+grestore
+% 211--231
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 461 1859 moveto
+455 1871 441 1899 435 1911 curveto
+stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+setupLatin1
+%%Page: 2 2
+%%PageBoundingBox: 36 36 2016 2095
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 1980 2059 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+% 0
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+929 834 7 7 ellipse_path stroke
+grestore
+% 275
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+992 864 7 7 ellipse_path stroke
+grestore
+% 0--275
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 936 837 moveto
+948 843 974 855 986 861 curveto
+stroke
+grestore
+% 253
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+954 785 7 7 ellipse_path stroke
+grestore
+% 0--253
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 932 828 moveto
+937 818 946 801 951 792 curveto
+stroke
+grestore
+% 245
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+865 791 7 7 ellipse_path stroke
+grestore
+% 0--245
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 923 830 moveto
+911 822 883 803 871 795 curveto
+stroke
+grestore
+% 229
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+892 772 7 7 ellipse_path stroke
+grestore
+% 0--229
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 925 828 moveto
+918 816 903 790 896 778 curveto
+stroke
+grestore
+% 215
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+901 945 7 7 ellipse_path stroke
+grestore
+% 0--215
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 927 841 moveto
+922 861 908 918 903 938 curveto
+stroke
+grestore
+% 199
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+955 920 7 7 ellipse_path stroke
+grestore
+% 0--199
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 931 841 moveto
+936 857 948 897 953 913 curveto
+stroke
+grestore
+% 184
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1003 841 7 7 ellipse_path stroke
+grestore
+% 0--184
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 936 835 moveto
+950 836 981 839 996 840 curveto
+stroke
+grestore
+% 182
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+991 783 7 7 ellipse_path stroke
+grestore
+% 0--182
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 935 829 moveto
+947 820 974 797 985 788 curveto
+stroke
+grestore
+% 171
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+858 880 7 7 ellipse_path stroke
+grestore
+% 0--171
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 923 838 moveto
+910 847 878 867 864 876 curveto
+stroke
+grestore
+% 166
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+981 818 7 7 ellipse_path stroke
+grestore
+% 0--166
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 936 832 moveto
+946 829 964 823 974 820 curveto
+stroke
+grestore
+% 162
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+876 837 7 7 ellipse_path stroke
+grestore
+% 0--162
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 922 834 moveto
+912 835 893 836 883 837 curveto
+stroke
+grestore
+% 161
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1007 804 7 7 ellipse_path stroke
+grestore
+% 0--161
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 936 831 moveto
+951 826 986 812 1000 807 curveto
+stroke
+grestore
+% 151
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+885 739 7 7 ellipse_path stroke
+grestore
+% 0--151
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 926 827 moveto
+918 810 896 763 888 746 curveto
+stroke
+grestore
+% 142
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+888 870 7 7 ellipse_path stroke
+grestore
+% 0--142
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 924 839 moveto
+916 845 901 858 893 865 curveto
+stroke
+grestore
+% 141
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+931 924 7 7 ellipse_path stroke
+grestore
+% 0--141
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 929 841 moveto
+930 858 931 900 931 917 curveto
+stroke
+grestore
+% 128
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+852 854 7 7 ellipse_path stroke
+grestore
+% 0--128
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 922 836 moveto
+907 840 873 849 859 852 curveto
+stroke
+grestore
+% 112
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+863 926 7 7 ellipse_path stroke
+grestore
+% 0--112
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 925 840 moveto
+913 856 879 904 867 920 curveto
+stroke
+grestore
+% 108
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+857 816 7 7 ellipse_path stroke
+grestore
+% 0--108
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 922 832 moveto
+908 829 878 821 864 818 curveto
+stroke
+grestore
+% 107
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1036 828 7 7 ellipse_path stroke
+grestore
+% 0--107
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 936 834 moveto
+956 832 1009 829 1029 828 curveto
+stroke
+grestore
+% 97
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+810 779 7 7 ellipse_path stroke
+grestore
+% 0--97
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 923 831 moveto
+902 822 837 792 816 782 curveto
+stroke
+grestore
+% 96
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+903 909 7 7 ellipse_path stroke
+grestore
+% 0--96
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 927 841 moveto
+922 855 910 888 905 902 curveto
+stroke
+grestore
+% 92
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+979 912 7 7 ellipse_path stroke
+grestore
+% 0--92
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 933 840 moveto
+942 855 966 891 975 906 curveto
+stroke
+grestore
+% 91
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+916 765 7 7 ellipse_path stroke
+grestore
+% 0--91
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 928 827 moveto
+925 814 920 785 917 772 curveto
+stroke
+grestore
+% 87
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+880 898 7 7 ellipse_path stroke
+grestore
+% 0--87
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 924 840 moveto
+915 852 893 880 884 892 curveto
+stroke
+grestore
+% 78
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+975 764 7 7 ellipse_path stroke
+grestore
+% 0--78
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 933 828 moveto
+942 815 962 783 971 770 curveto
+stroke
+grestore
+% 72
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+947 732 7 7 ellipse_path stroke
+grestore
+% 0--72
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 930 827 moveto
+933 808 942 758 946 739 curveto
+stroke
+grestore
+% 63
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+961 885 7 7 ellipse_path stroke
+grestore
+% 0--63
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 933 840 moveto
+939 850 951 869 957 879 curveto
+stroke
+grestore
+% 52
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+939 762 7 7 ellipse_path stroke
+grestore
+% 0--52
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 930 827 moveto
+932 813 936 783 938 769 curveto
+stroke
+grestore
+% 48
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+824 827 7 7 ellipse_path stroke
+grestore
+% 0--48
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 922 834 moveto
+903 832 850 829 831 827 curveto
+stroke
+grestore
+% 45
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+845 748 7 7 ellipse_path stroke
+grestore
+% 0--45
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 924 829 moveto
+909 813 866 769 850 753 curveto
+stroke
+grestore
+% 43
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+894 800 7 7 ellipse_path stroke
+grestore
+% 0--43
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 924 829 moveto
+917 823 906 812 899 805 curveto
+stroke
+grestore
+% 36
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+957 628 7 7 ellipse_path stroke
+grestore
+% 0--36
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 930 827 moveto
+934 795 952 667 956 635 curveto
+stroke
+grestore
+% 33
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1028 875 7 7 ellipse_path stroke
+grestore
+% 0--33
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 935 837 moveto
+954 844 1003 865 1021 872 curveto
+stroke
+grestore
+% 23
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+994 890 7 7 ellipse_path stroke
+grestore
+% 0--23
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 935 839 moveto
+947 849 976 875 988 885 curveto
+stroke
+grestore
+% 21
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1073 713 7 7 ellipse_path stroke
+grestore
+% 0--21
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 934 829 moveto
+957 810 1045 737 1068 718 curveto
+stroke
+grestore
+% 19
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+628 714 7 7 ellipse_path stroke
+grestore
+% 0--19
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 922 831 moveto
+882 816 675 733 635 717 curveto
+stroke
+grestore
+% 12
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+801 871 7 7 ellipse_path stroke
+grestore
+% 0--12
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 922 836 moveto
+900 843 830 863 808 869 curveto
+stroke
+grestore
+% 9
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+740 961 7 7 ellipse_path stroke
+grestore
+% 0--9
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 923 838 moveto
+895 856 775 937 746 957 curveto
+stroke
+grestore
+% 6
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+866 615 7 7 ellipse_path stroke
+grestore
+% 0--6
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 927 827 moveto
+917 794 878 655 868 622 curveto
+stroke
+grestore
+% 4
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1017 666 7 7 ellipse_path stroke
+grestore
+% 0--4
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 932 828 moveto
+946 801 1000 699 1014 672 curveto
+stroke
+grestore
+% 3
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1066 782 7 7 ellipse_path stroke
+grestore
+% 0--3
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 936 831 moveto
+959 823 1036 793 1059 785 curveto
+stroke
+grestore
+% 2
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+927 893 7 7 ellipse_path stroke
+grestore
+% 0--2
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 929 841 moveto
+928 853 928 874 927 886 curveto
+stroke
+grestore
+% 1
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1209 1157 7 7 ellipse_path stroke
+grestore
+% 0--1
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 934 839 moveto
+967 877 1170 1112 1204 1151 curveto
+stroke
+grestore
+% 217
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+878 1008 7 7 ellipse_path stroke
+grestore
+% 215--217
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 899 952 moveto
+895 964 885 989 881 1001 curveto
+stroke
+grestore
+% 186
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+851 681 7 7 ellipse_path stroke
+grestore
+% 151--186
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 881 733 moveto
+875 722 861 699 855 687 curveto
+stroke
+grestore
+% 146
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+823 982 7 7 ellipse_path stroke
+grestore
+% 112--146
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 859 932 moveto
+851 943 835 965 827 976 curveto
+stroke
+grestore
+% 240
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1103 825 7 7 ellipse_path stroke
+grestore
+% 107--240
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1043 828 moveto
+1056 827 1083 826 1096 825 curveto
+stroke
+grestore
+% 232
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+746 761 7 7 ellipse_path stroke
+grestore
+% 97--232
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 803 777 moveto
+791 773 765 766 753 763 curveto
+stroke
+grestore
+% 115
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+732 734 7 7 ellipse_path stroke
+grestore
+% 97--115
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 804 775 moveto
+789 767 753 746 738 738 curveto
+stroke
+grestore
+% 298
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+950 670 7 7 ellipse_path stroke
+grestore
+% 72--298
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 947 725 moveto
+948 713 949 689 950 677 curveto
+stroke
+grestore
+% 158
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+755 818 7 7 ellipse_path stroke
+grestore
+% 48--158
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 817 826 moveto
+804 825 775 821 762 819 curveto
+stroke
+grestore
+% 218
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+782 684 7 7 ellipse_path stroke
+grestore
+% 45--218
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 840 743 moveto
+828 731 799 701 787 689 curveto
+stroke
+grestore
+% 95
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+955 515 7 7 ellipse_path stroke
+grestore
+% 36--95
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 957 621 moveto
+956 600 955 542 955 522 curveto
+stroke
+grestore
+% 70
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+959 559 7 7 ellipse_path stroke
+grestore
+% 36--70
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 957 621 moveto
+958 608 959 579 959 566 curveto
+stroke
+grestore
+% 47
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+995 475 7 7 ellipse_path stroke
+grestore
+% 36--47
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 959 621 moveto
+965 595 987 508 993 482 curveto
+stroke
+grestore
+% 248
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1088 894 7 7 ellipse_path stroke
+grestore
+% 33--248
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1035 877 moveto
+1047 881 1070 888 1081 892 curveto
+stroke
+grestore
+% 257
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1144 693 7 7 ellipse_path stroke
+grestore
+% 21--257
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1080 711 moveto
+1094 707 1123 699 1137 695 curveto
+stroke
+grestore
+% 168
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1143 668 7 7 ellipse_path stroke
+grestore
+% 21--168
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1079 709 moveto
+1092 700 1124 680 1137 672 curveto
+stroke
+grestore
+% 94
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1120 664 7 7 ellipse_path stroke
+grestore
+% 21--94
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1078 708 moveto
+1087 698 1106 678 1115 669 curveto
+stroke
+grestore
+% 55
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1175 618 7 7 ellipse_path stroke
+grestore
+% 21--55
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1078 708 moveto
+1096 692 1152 639 1170 623 curveto
+stroke
+grestore
+% 26
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1108 645 7 7 ellipse_path stroke
+grestore
+% 21--26
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1076 707 moveto
+1083 694 1098 665 1105 651 curveto
+stroke
+grestore
+% 239
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+567 718 7 7 ellipse_path stroke
+grestore
+% 19--239
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 621 714 moveto
+609 715 586 717 574 718 curveto
+stroke
+grestore
+% 238
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+577 678 7 7 ellipse_path stroke
+grestore
+% 19--238
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 622 710 moveto
+612 703 593 689 583 682 curveto
+stroke
+grestore
+% 68
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+567 635 7 7 ellipse_path stroke
+grestore
+% 19--68
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 624 708 moveto
+613 694 583 655 571 641 curveto
+stroke
+grestore
+% 66
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+542 704 7 7 ellipse_path stroke
+grestore
+% 19--66
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 621 713 moveto
+605 711 566 707 549 705 curveto
+stroke
+grestore
+% 22
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+364 609 7 7 ellipse_path stroke
+grestore
+% 19--22
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 621 711 moveto
+585 697 408 626 371 612 curveto
+stroke
+grestore
+% 294
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+744 909 7 7 ellipse_path stroke
+grestore
+% 12--294
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 795 875 moveto
+784 883 761 898 750 905 curveto
+stroke
+grestore
+% 228
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+730 887 7 7 ellipse_path stroke
+grestore
+% 12--228
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 794 873 moveto
+780 876 751 883 737 885 curveto
+stroke
+grestore
+% 90
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+728 862 7 7 ellipse_path stroke
+grestore
+% 12--90
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 794 870 moveto
+780 868 749 865 735 863 curveto
+stroke
+grestore
+% 183
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+691 1015 7 7 ellipse_path stroke
+grestore
+% 9--183
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 735 966 moveto
+726 977 705 999 696 1010 curveto
+stroke
+grestore
+% 100
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+681 992 7 7 ellipse_path stroke
+grestore
+% 9--100
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 734 964 moveto
+722 970 699 982 687 989 curveto
+stroke
+grestore
+% 56
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+598 1053 7 7 ellipse_path stroke
+grestore
+% 9--56
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 734 965 moveto
+711 980 627 1034 604 1049 curveto
+stroke
+grestore
+% 51
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+669 965 7 7 ellipse_path stroke
+grestore
+% 9--51
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 733 961 moveto
+719 962 690 964 676 965 curveto
+stroke
+grestore
+% 29
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+712 1028 7 7 ellipse_path stroke
+grestore
+% 9--29
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 737 968 moveto
+732 981 720 1009 715 1021 curveto
+stroke
+grestore
+% 16
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+648 996 7 7 ellipse_path stroke
+grestore
+% 9--16
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 733 964 moveto
+716 970 672 987 655 993 curveto
+stroke
+grestore
+% 278
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+871 542 7 7 ellipse_path stroke
+grestore
+% 6--278
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 866 608 moveto
+868 594 870 563 871 549 curveto
+stroke
+grestore
+% 266
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+847 543 7 7 ellipse_path stroke
+grestore
+% 6--266
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 864 608 moveto
+860 594 852 564 849 550 curveto
+stroke
+grestore
+% 225
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+826 554 7 7 ellipse_path stroke
+grestore
+% 6--225
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 862 609 moveto
+854 597 838 572 830 560 curveto
+stroke
+grestore
+% 193
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+808 569 7 7 ellipse_path stroke
+grestore
+% 6--193
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 860 610 moveto
+849 602 825 582 814 574 curveto
+stroke
+grestore
+% 69
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+815 507 7 7 ellipse_path stroke
+grestore
+% 6--69
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 863 609 moveto
+854 589 827 533 818 514 curveto
+stroke
+grestore
+% 67
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+842 453 7 7 ellipse_path stroke
+grestore
+% 6--67
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 865 608 moveto
+861 581 847 487 843 460 curveto
+stroke
+grestore
+% 250
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1016 591 7 7 ellipse_path stroke
+grestore
+% 4--250
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1017 659 moveto
+1017 644 1016 612 1016 598 curveto
+stroke
+grestore
+% 196
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1071 649 7 7 ellipse_path stroke
+grestore
+% 4--196
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1024 664 moveto
+1035 660 1054 654 1064 651 curveto
+stroke
+grestore
+% 179
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1013 574 7 7 ellipse_path stroke
+grestore
+% 4--179
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1017 659 moveto
+1016 642 1014 598 1013 581 curveto
+stroke
+grestore
+% 159
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1075 608 7 7 ellipse_path stroke
+grestore
+% 4--159
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1022 661 moveto
+1034 649 1059 624 1070 613 curveto
+stroke
+grestore
+% 64
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1088 542 7 7 ellipse_path stroke
+grestore
+% 4--64
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1021 660 moveto
+1033 638 1072 569 1084 548 curveto
+stroke
+grestore
+% 116
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1132 766 7 7 ellipse_path stroke
+grestore
+% 3--116
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1073 780 moveto
+1086 777 1113 771 1125 768 curveto
+stroke
+grestore
+% 30
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1170 740 7 7 ellipse_path stroke
+grestore
+% 3--30
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1073 779 moveto
+1091 772 1145 750 1163 743 curveto
+stroke
+grestore
+% 281
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1164 1205 7 7 ellipse_path stroke
+grestore
+% 1--281
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1204 1162 moveto
+1196 1172 1178 1191 1169 1200 curveto
+stroke
+grestore
+% 260
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1213 1212 7 7 ellipse_path stroke
+grestore
+% 1--260
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1210 1164 moveto
+1211 1175 1212 1194 1213 1205 curveto
+stroke
+grestore
+% 258
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1147 1158 7 7 ellipse_path stroke
+grestore
+% 1--258
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1202 1157 moveto
+1190 1157 1166 1158 1154 1158 curveto
+stroke
+grestore
+% 249
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1162 1129 7 7 ellipse_path stroke
+grestore
+% 1--249
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1203 1153 moveto
+1194 1148 1177 1138 1168 1133 curveto
+stroke
+grestore
+% 237
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1186 1218 7 7 ellipse_path stroke
+grestore
+% 1--237
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1206 1164 moveto
+1202 1176 1193 1199 1189 1211 curveto
+stroke
+grestore
+% 214
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1269 1146 7 7 ellipse_path stroke
+grestore
+% 1--214
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1216 1156 moveto
+1228 1154 1250 1150 1262 1147 curveto
+stroke
+grestore
+% 167
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1230 1100 7 7 ellipse_path stroke
+grestore
+% 1--167
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1212 1150 moveto
+1216 1139 1223 1118 1228 1107 curveto
+stroke
+grestore
+% 160
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1148 1185 7 7 ellipse_path stroke
+grestore
+% 1--160
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1202 1160 moveto
+1191 1165 1167 1176 1155 1182 curveto
+stroke
+grestore
+% 44
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1224 1287 7 7 ellipse_path stroke
+grestore
+% 1--44
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1210 1164 moveto
+1213 1187 1221 1257 1223 1280 curveto
+stroke
+grestore
+% 38
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1310 1261 7 7 ellipse_path stroke
+grestore
+% 1--38
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1214 1162 moveto
+1232 1180 1288 1238 1305 1256 curveto
+stroke
+grestore
+% 35
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1196 1103 7 7 ellipse_path stroke
+grestore
+% 1--35
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1207 1150 moveto
+1205 1139 1200 1120 1198 1110 curveto
+stroke
+grestore
+% 27
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1347 1158 7 7 ellipse_path stroke
+grestore
+% 1--27
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1216 1157 moveto
+1240 1157 1316 1158 1340 1158 curveto
+stroke
+grestore
+% 20
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1435 1073 7 7 ellipse_path stroke
+grestore
+% 1--20
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1216 1154 moveto
+1250 1142 1395 1088 1428 1076 curveto
+stroke
+grestore
+% 17
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1249 1198 7 7 ellipse_path stroke
+grestore
+% 1--17
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1214 1162 moveto
+1222 1170 1237 1185 1244 1193 curveto
+stroke
+grestore
+% 15
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1434 1238 7 7 ellipse_path stroke
+grestore
+% 1--15
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1216 1160 moveto
+1250 1171 1394 1223 1427 1236 curveto
+stroke
+grestore
+% 13
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1224 1492 7 7 ellipse_path stroke
+grestore
+% 1--13
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1209 1164 moveto
+1211 1207 1222 1441 1224 1485 curveto
+stroke
+grestore
+% 11
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1283 1085 7 7 ellipse_path stroke
+grestore
+% 1--11
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1214 1152 moveto
+1228 1138 1264 1103 1278 1090 curveto
+stroke
+grestore
+% 10
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1125 1264 7 7 ellipse_path stroke
+grestore
+% 1--10
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1204 1163 moveto
+1190 1181 1144 1240 1129 1258 curveto
+stroke
+grestore
+% 8
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1267 1175 7 7 ellipse_path stroke
+grestore
+% 1--8
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1216 1159 moveto
+1228 1163 1249 1169 1260 1173 curveto
+stroke
+grestore
+% 7
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1255 1120 7 7 ellipse_path stroke
+grestore
+% 1--7
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1215 1152 moveto
+1224 1146 1241 1132 1249 1125 curveto
+stroke
+grestore
+% 5
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1240 1234 7 7 ellipse_path stroke
+grestore
+% 1--5
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1212 1164 moveto
+1217 1178 1231 1213 1237 1227 curveto
+stroke
+grestore
+% 286
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1234 1350 7 7 ellipse_path stroke
+grestore
+% 44--286
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1225 1294 moveto
+1227 1306 1231 1331 1233 1343 curveto
+stroke
+grestore
+% 99
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1202 1350 7 7 ellipse_path stroke
+grestore
+% 44--99
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1222 1294 moveto
+1218 1306 1209 1331 1204 1343 curveto
+stroke
+grestore
+% 75
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1258 1380 7 7 ellipse_path stroke
+grestore
+% 44--75
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1226 1294 moveto
+1232 1311 1249 1356 1256 1373 curveto
+stroke
+grestore
+% 296
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1354 1312 7 7 ellipse_path stroke
+grestore
+% 38--296
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1315 1266 moveto
+1323 1276 1341 1297 1349 1306 curveto
+stroke
+grestore
+% 269
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1331 1326 7 7 ellipse_path stroke
+grestore
+% 38--269
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1312 1268 moveto
+1317 1281 1325 1307 1329 1319 curveto
+stroke
+grestore
+% 181
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1371 1289 7 7 ellipse_path stroke
+grestore
+% 38--181
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1317 1264 moveto
+1328 1269 1352 1280 1364 1286 curveto
+stroke
+grestore
+% 74
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1389 1339 7 7 ellipse_path stroke
+grestore
+% 38--74
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1315 1266 moveto
+1330 1280 1369 1319 1384 1334 curveto
+stroke
+grestore
+% 230
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1431 1151 7 7 ellipse_path stroke
+grestore
+% 27--230
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1354 1157 moveto
+1370 1156 1408 1153 1424 1152 curveto
+stroke
+grestore
+% 219
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1393 1208 7 7 ellipse_path stroke
+grestore
+% 27--219
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1352 1163 moveto
+1361 1173 1380 1193 1388 1203 curveto
+stroke
+grestore
+% 206
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1390 1108 7 7 ellipse_path stroke
+grestore
+% 27--206
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1352 1153 moveto
+1360 1143 1377 1123 1385 1114 curveto
+stroke
+grestore
+% 150
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1414 1124 7 7 ellipse_path stroke
+grestore
+% 27--150
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1353 1155 moveto
+1366 1148 1395 1134 1408 1127 curveto
+stroke
+grestore
+% 132
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1405 1188 7 7 ellipse_path stroke
+grestore
+% 27--132
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1354 1161 moveto
+1365 1167 1388 1179 1399 1185 curveto
+stroke
+grestore
+% 80
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1403 1150 7 7 ellipse_path stroke
+grestore
+% 27--80
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1354 1157 moveto
+1365 1156 1385 1153 1396 1151 curveto
+stroke
+grestore
+% 40
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1427 1178 7 7 ellipse_path stroke
+grestore
+% 27--40
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1354 1160 moveto
+1369 1164 1405 1173 1420 1176 curveto
+stroke
+grestore
+% 270
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1508 1089 7 7 ellipse_path stroke
+grestore
+% 20--270
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1442 1075 moveto
+1456 1078 1487 1085 1501 1088 curveto
+stroke
+grestore
+% 188
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1479 1019 7 7 ellipse_path stroke
+grestore
+% 20--188
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1440 1067 moveto
+1448 1057 1466 1035 1474 1025 curveto
+stroke
+grestore
+% 130
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1618 1018 7 7 ellipse_path stroke
+grestore
+% 20--130
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1442 1071 moveto
+1471 1062 1582 1029 1611 1020 curveto
+stroke
+grestore
+% 65
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1521 1025 7 7 ellipse_path stroke
+grestore
+% 20--65
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1441 1070 moveto
+1457 1061 1499 1037 1515 1028 curveto
+stroke
+grestore
+% 62
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1509 1065 7 7 ellipse_path stroke
+grestore
+% 20--62
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1442 1072 moveto
+1456 1070 1487 1067 1502 1066 curveto
+stroke
+grestore
+% 53
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1494 1043 7 7 ellipse_path stroke
+grestore
+% 20--53
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1441 1070 moveto
+1453 1064 1476 1052 1488 1046 curveto
+stroke
+grestore
+% 82
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1624 1294 7 7 ellipse_path stroke
+grestore
+% 15--82
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1441 1240 moveto
+1471 1249 1587 1283 1617 1292 curveto
+stroke
+grestore
+% 59
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1499 1255 7 7 ellipse_path stroke
+grestore
+% 15--59
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1441 1240 moveto
+1454 1243 1479 1250 1492 1253 curveto
+stroke
+grestore
+% 39
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1524 1285 7 7 ellipse_path stroke
+grestore
+% 15--39
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1440 1241 moveto
+1457 1250 1501 1273 1518 1282 curveto
+stroke
+grestore
+% 174
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1224 1551 7 7 ellipse_path stroke
+grestore
+% 13--174
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1224 1499 moveto
+1224 1511 1224 1532 1224 1544 curveto
+stroke
+grestore
+% 88
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1192 1545 7 7 ellipse_path stroke
+grestore
+% 13--88
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1220 1498 moveto
+1214 1508 1202 1529 1196 1539 curveto
+stroke
+grestore
+% 61
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1258 1562 7 7 ellipse_path stroke
+grestore
+% 13--61
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1227 1498 moveto
+1234 1512 1248 1542 1255 1555 curveto
+stroke
+grestore
+% 50
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1246 1640 7 7 ellipse_path stroke
+grestore
+% 13--50
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1225 1499 moveto
+1228 1524 1241 1608 1245 1633 curveto
+stroke
+grestore
+% 25
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1126 1701 7 7 ellipse_path stroke
+grestore
+% 13--25
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1221 1498 moveto
+1206 1530 1143 1664 1129 1695 curveto
+stroke
+grestore
+% 14
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1352 1661 7 7 ellipse_path stroke
+grestore
+% 13--14
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1228 1498 moveto
+1247 1523 1328 1629 1348 1655 curveto
+stroke
+grestore
+% 60
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1343 1028 7 7 ellipse_path stroke
+grestore
+% 11--60
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1288 1080 moveto
+1300 1069 1326 1044 1338 1033 curveto
+stroke
+grestore
+% 254
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1120 1332 7 7 ellipse_path stroke
+grestore
+% 10--254
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1124 1271 moveto
+1123 1284 1121 1312 1120 1325 curveto
+stroke
+grestore
+% 234
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1094 1336 7 7 ellipse_path stroke
+grestore
+% 10--234
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1122 1271 moveto
+1116 1284 1102 1316 1097 1330 curveto
+stroke
+grestore
+% 203
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1085 1314 7 7 ellipse_path stroke
+grestore
+% 10--203
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1120 1270 moveto
+1113 1280 1097 1299 1090 1308 curveto
+stroke
+grestore
+% 83
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1060 1286 7 7 ellipse_path stroke
+grestore
+% 10--83
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1118 1266 moveto
+1105 1271 1079 1280 1067 1284 curveto
+stroke
+grestore
+% 37
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1062 1312 7 7 ellipse_path stroke
+grestore
+% 10--37
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1119 1268 moveto
+1107 1277 1080 1299 1068 1308 curveto
+stroke
+grestore
+% 131
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1263 1291 7 7 ellipse_path stroke
+grestore
+% 5--131
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1243 1241 moveto
+1247 1252 1256 1273 1260 1284 curveto
+stroke
+grestore
+% 178
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1233 694 7 7 ellipse_path stroke
+grestore
+% 30--178
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1176 736 moveto
+1187 727 1215 707 1227 698 curveto
+stroke
+grestore
+% 34
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1242 719 7 7 ellipse_path stroke
+grestore
+% 30--34
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1177 738 moveto
+1191 734 1222 725 1235 721 curveto
+stroke
+grestore
+% 233
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1146 486 7 7 ellipse_path stroke
+grestore
+% 64--233
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1093 537 moveto
+1105 526 1130 502 1141 491 curveto
+stroke
+grestore
+% 197
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1130 469 7 7 ellipse_path stroke
+grestore
+% 64--197
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1092 536 moveto
+1100 522 1119 489 1126 475 curveto
+stroke
+grestore
+% 152
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1107 466 7 7 ellipse_path stroke
+grestore
+% 64--152
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1090 535 moveto
+1093 520 1101 488 1105 473 curveto
+stroke
+grestore
+% 268
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+773 445 7 7 ellipse_path stroke
+grestore
+% 69--268
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 811 501 moveto
+803 489 785 463 777 451 curveto
+stroke
+grestore
+% 85
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+797 432 7 7 ellipse_path stroke
+grestore
+% 69--85
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 813 500 moveto
+810 486 802 454 799 439 curveto
+stroke
+grestore
+% 77
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+820 307 7 7 ellipse_path stroke
+grestore
+% 67--77
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 841 446 moveto
+838 421 825 339 821 314 curveto
+stroke
+grestore
+% 143
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+522 1089 7 7 ellipse_path stroke
+grestore
+% 56--143
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 592 1056 moveto
+577 1063 543 1079 528 1086 curveto
+stroke
+grestore
+% 76
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+481 1131 7 7 ellipse_path stroke
+grestore
+% 56--76
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 592 1057 moveto
+572 1070 507 1113 487 1127 curveto
+stroke
+grestore
+% 114
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+583 1018 7 7 ellipse_path stroke
+grestore
+% 16--114
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 641 998 moveto
+628 1003 602 1012 590 1016 curveto
+stroke
+grestore
+% 157
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1394 980 7 7 ellipse_path stroke
+grestore
+% 60--157
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1348 1023 moveto
+1359 1013 1379 994 1389 985 curveto
+stroke
+grestore
+% 89
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1286 1617 7 7 ellipse_path stroke
+grestore
+% 61--89
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1261 1568 moveto
+1267 1579 1277 1600 1283 1610 curveto
+stroke
+grestore
+% 106
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1270 1783 7 7 ellipse_path stroke
+grestore
+% 50--106
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1247 1647 moveto
+1251 1671 1265 1751 1269 1776 curveto
+stroke
+grestore
+% 289
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1137 1773 7 7 ellipse_path stroke
+grestore
+% 25--289
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1127 1708 moveto
+1129 1722 1134 1752 1136 1766 curveto
+stroke
+grestore
+% 261
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1055 1725 7 7 ellipse_path stroke
+grestore
+% 25--261
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1119 1703 moveto
+1105 1708 1075 1718 1062 1723 curveto
+stroke
+grestore
+% 180
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1052 1821 7 7 ellipse_path stroke
+grestore
+% 25--180
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1122 1707 moveto
+1109 1728 1069 1794 1056 1815 curveto
+stroke
+grestore
+% 170
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1067 1745 7 7 ellipse_path stroke
+grestore
+% 25--170
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1120 1705 moveto
+1109 1714 1084 1732 1073 1741 curveto
+stroke
+grestore
+% 154
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1036 1774 7 7 ellipse_path stroke
+grestore
+% 25--154
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1120 1706 moveto
+1104 1719 1058 1756 1042 1769 curveto
+stroke
+grestore
+% 137
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1058 1701 7 7 ellipse_path stroke
+grestore
+% 25--137
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1119 1701 moveto
+1106 1701 1078 1701 1065 1701 curveto
+stroke
+grestore
+% 134
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1103 1774 7 7 ellipse_path stroke
+grestore
+% 25--134
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1124 1708 moveto
+1119 1722 1110 1753 1105 1767 curveto
+stroke
+grestore
+% 58
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1088 1751 7 7 ellipse_path stroke
+grestore
+% 25--58
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1122 1707 moveto
+1115 1717 1100 1736 1092 1745 curveto
+stroke
+grestore
+% 42
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1158 1754 7 7 ellipse_path stroke
+grestore
+% 25--42
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1130 1707 moveto
+1136 1717 1148 1738 1154 1748 curveto
+stroke
+grestore
+% 32
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1102 1848 7 7 ellipse_path stroke
+grestore
+% 25--32
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1125 1708 moveto
+1121 1733 1107 1816 1103 1841 curveto
+stroke
+grestore
+% 31
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1120 1750 7 7 ellipse_path stroke
+grestore
+% 25--31
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1125 1708 moveto
+1124 1718 1122 1733 1121 1743 curveto
+stroke
+grestore
+% 280
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1405 1698 7 7 ellipse_path stroke
+grestore
+% 14--280
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1358 1665 moveto
+1368 1672 1389 1687 1399 1694 curveto
+stroke
+grestore
+% 148
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1379 1717 7 7 ellipse_path stroke
+grestore
+% 14--148
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1355 1667 moveto
+1360 1678 1371 1700 1376 1711 curveto
+stroke
+grestore
+% 93
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1466 1782 7 7 ellipse_path stroke
+grestore
+% 14--93
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1357 1666 moveto
+1376 1686 1442 1757 1461 1777 curveto
+stroke
+grestore
+% 18
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1395 1781 7 7 ellipse_path stroke
+grestore
+% 14--18
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1354 1668 moveto
+1362 1689 1385 1753 1393 1774 curveto
+stroke
+grestore
+% 256
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1536 1797 7 7 ellipse_path stroke
+grestore
+% 93--256
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1473 1783 moveto
+1487 1786 1516 1793 1529 1795 curveto
+stroke
+grestore
+% 236
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1505 1836 7 7 ellipse_path stroke
+grestore
+% 93--236
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1470 1788 moveto
+1477 1798 1493 1820 1501 1830 curveto
+stroke
+grestore
+% 220
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1517 1872 7 7 ellipse_path stroke
+grestore
+% 93--220
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1470 1788 moveto
+1479 1805 1504 1849 1513 1866 curveto
+stroke
+grestore
+% 216
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1482 1850 7 7 ellipse_path stroke
+grestore
+% 93--216
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1468 1789 moveto
+1471 1802 1477 1830 1480 1843 curveto
+stroke
+grestore
+% 205
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1525 1819 7 7 ellipse_path stroke
+grestore
+% 93--205
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1472 1786 moveto
+1484 1794 1508 1808 1519 1815 curveto
+stroke
+grestore
+% 169
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1545 1849 7 7 ellipse_path stroke
+grestore
+% 93--169
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1471 1787 moveto
+1485 1799 1525 1832 1539 1844 curveto
+stroke
+grestore
+% 200
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1417 1844 7 7 ellipse_path stroke
+grestore
+% 18--200
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1397 1788 moveto
+1401 1800 1410 1825 1415 1837 curveto
+stroke
+grestore
+% 120
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1429 1889 7 7 ellipse_path stroke
+grestore
+% 18--120
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1397 1788 moveto
+1404 1807 1421 1863 1427 1882 curveto
+stroke
+grestore
+% 247
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1696 1306 7 7 ellipse_path stroke
+grestore
+% 82--247
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1631 1295 moveto
+1645 1297 1675 1302 1689 1305 curveto
+stroke
+grestore
+% 208
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1689 1328 7 7 ellipse_path stroke
+grestore
+% 82--208
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1630 1297 moveto
+1643 1304 1670 1318 1683 1325 curveto
+stroke
+grestore
+% 133
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1674 1347 7 7 ellipse_path stroke
+grestore
+% 82--133
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1629 1299 moveto
+1639 1310 1660 1332 1669 1342 curveto
+stroke
+grestore
+% 105
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1694 1281 7 7 ellipse_path stroke
+grestore
+% 82--105
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1631 1293 moveto
+1645 1290 1674 1285 1687 1282 curveto
+stroke
+grestore
+% 86
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1780 1345 7 7 ellipse_path stroke
+grestore
+% 82--86
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1631 1296 moveto
+1657 1305 1747 1334 1773 1343 curveto
+stroke
+grestore
+% 293
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1575 1333 7 7 ellipse_path stroke
+grestore
+% 39--293
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1529 1290 moveto
+1540 1300 1560 1319 1570 1328 curveto
+stroke
+grestore
+% 212
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1587 1305 7 7 ellipse_path stroke
+grestore
+% 39--212
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1531 1287 moveto
+1543 1291 1568 1299 1580 1303 curveto
+stroke
+grestore
+% 187
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1460 1976 7 7 ellipse_path stroke
+grestore
+% 120--187
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1431 1896 moveto
+1437 1912 1452 1952 1458 1969 curveto
+stroke
+grestore
+% 267
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+519 567 7 7 ellipse_path stroke
+grestore
+% 68--267
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 563 629 moveto
+554 617 532 586 523 573 curveto
+stroke
+grestore
+% 213
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+479 697 7 7 ellipse_path stroke
+grestore
+% 66--213
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 535 703 moveto
+523 702 498 699 486 698 curveto
+stroke
+grestore
+% 259
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+306 541 7 7 ellipse_path stroke
+grestore
+% 22--259
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 359 604 moveto
+349 591 322 559 311 547 curveto
+stroke
+grestore
+% 227
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+304 590 7 7 ellipse_path stroke
+grestore
+% 22--227
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 357 607 moveto
+345 603 322 596 311 592 curveto
+stroke
+grestore
+% 204
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+324 659 7 7 ellipse_path stroke
+grestore
+% 22--204
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 359 615 moveto
+352 625 336 644 329 653 curveto
+stroke
+grestore
+% 190
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+322 573 7 7 ellipse_path stroke
+grestore
+% 22--190
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 359 604 moveto
+350 598 335 585 327 578 curveto
+stroke
+grestore
+% 176
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+311 634 7 7 ellipse_path stroke
+grestore
+% 22--176
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 358 612 moveto
+347 617 328 626 318 631 curveto
+stroke
+grestore
+% 156
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+298 612 7 7 ellipse_path stroke
+grestore
+% 22--156
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 357 609 moveto
+344 610 318 611 305 612 curveto
+stroke
+grestore
+% 84
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+244 528 7 7 ellipse_path stroke
+grestore
+% 22--84
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 358 605 moveto
+337 591 270 546 250 532 curveto
+stroke
+grestore
+% 71
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+284 658 7 7 ellipse_path stroke
+grestore
+% 22--71
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 358 613 moveto
+343 622 305 645 290 654 curveto
+stroke
+grestore
+% 57
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+292 482 7 7 ellipse_path stroke
+grestore
+% 22--57
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 361 603 moveto
+348 582 308 510 296 488 curveto
+stroke
+grestore
+% 49
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+341 553 7 7 ellipse_path stroke
+grestore
+% 22--49
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 361 602 moveto
+357 591 348 570 344 560 curveto
+stroke
+grestore
+% 46
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+210 574 7 7 ellipse_path stroke
+grestore
+% 22--46
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 357 607 moveto
+331 602 243 582 217 576 curveto
+stroke
+grestore
+% 28
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+210 644 7 7 ellipse_path stroke
+grestore
+% 22--28
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 357 611 moveto
+331 616 243 636 217 642 curveto
+stroke
+grestore
+% 24
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+365 545 7 7 ellipse_path stroke
+grestore
+% 22--24
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 364 602 moveto
+364 590 365 565 365 552 curveto
+stroke
+grestore
+% 210
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1689 956 7 7 ellipse_path stroke
+grestore
+% 130--210
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1624 1013 moveto
+1637 1002 1670 972 1684 961 curveto
+stroke
+grestore
+% 165
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1673 991 7 7 ellipse_path stroke
+grestore
+% 130--165
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1624 1015 moveto
+1635 1010 1656 1000 1666 994 curveto
+stroke
+grestore
+% 145
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1685 1026 7 7 ellipse_path stroke
+grestore
+% 130--145
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1625 1019 moveto
+1638 1021 1665 1024 1678 1025 curveto
+stroke
+grestore
+% 140
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1706 989 7 7 ellipse_path stroke
+grestore
+% 130--140
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1625 1016 moveto
+1642 1010 1682 997 1699 991 curveto
+stroke
+grestore
+% 138
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1751 990 7 7 ellipse_path stroke
+grestore
+% 130--138
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1625 1016 moveto
+1649 1012 1721 996 1744 991 curveto
+stroke
+grestore
+% 155
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1576 990 7 7 ellipse_path stroke
+grestore
+% 65--155
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1527 1021 moveto
+1538 1014 1559 1001 1570 994 curveto
+stroke
+grestore
+% 209
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1234 562 7 7 ellipse_path stroke
+grestore
+% 55--209
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1180 613 moveto
+1192 602 1218 578 1229 567 curveto
+stroke
+grestore
+% 198
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1215 549 7 7 ellipse_path stroke
+grestore
+% 55--198
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1179 612 moveto
+1187 599 1204 568 1211 555 curveto
+stroke
+grestore
+% 129
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1245 583 7 7 ellipse_path stroke
+grestore
+% 55--129
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1181 615 moveto
+1195 608 1225 593 1238 586 curveto
+stroke
+grestore
+% 279
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+260 490 7 7 ellipse_path stroke
+grestore
+% 259--279
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 301 536 moveto
+292 526 273 505 265 495 curveto
+stroke
+grestore
+% 192
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+197 471 7 7 ellipse_path stroke
+grestore
+% 84--192
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 239 522 moveto
+230 511 210 488 202 477 curveto
+stroke
+grestore
+% 126
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+148 462 7 7 ellipse_path stroke
+grestore
+% 84--126
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 238 524 moveto
+221 512 171 478 154 466 curveto
+stroke
+grestore
+% 111
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+181 495 7 7 ellipse_path stroke
+grestore
+% 84--111
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 238 525 moveto
+226 518 199 504 187 498 curveto
+stroke
+grestore
+% 135
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+225 690 7 7 ellipse_path stroke
+grestore
+% 71--135
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 278 661 moveto
+266 668 243 680 231 687 curveto
+stroke
+grestore
+% 284
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+246 427 7 7 ellipse_path stroke
+grestore
+% 57--284
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 287 477 moveto
+279 466 259 443 251 433 curveto
+stroke
+grestore
+% 202
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+272 413 7 7 ellipse_path stroke
+grestore
+% 57--202
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 290 475 moveto
+286 462 278 433 274 420 curveto
+stroke
+grestore
+% 127
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+222 391 7 7 ellipse_path stroke
+grestore
+% 57--127
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 288 476 moveto
+275 460 239 413 226 397 curveto
+stroke
+grestore
+% 276
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+151 544 7 7 ellipse_path stroke
+grestore
+% 46--276
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 204 571 moveto
+192 565 169 553 157 547 curveto
+stroke
+grestore
+% 226
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+117 533 7 7 ellipse_path stroke
+grestore
+% 46--226
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 203 571 moveto
+186 564 141 544 124 536 curveto
+stroke
+grestore
+% 153
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+143 576 7 7 ellipse_path stroke
+grestore
+% 46--153
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 203 574 moveto
+190 575 163 575 150 576 curveto
+stroke
+grestore
+% 124
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+109 565 7 7 ellipse_path stroke
+grestore
+% 46--124
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 203 573 moveto
+184 571 135 567 116 566 curveto
+stroke
+grestore
+% 272
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+142 639 7 7 ellipse_path stroke
+grestore
+% 28--272
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 203 643 moveto
+190 642 162 640 149 639 curveto
+stroke
+grestore
+% 104
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+96 663 7 7 ellipse_path stroke
+grestore
+% 28--104
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 203 645 moveto
+182 648 124 658 103 662 curveto
+stroke
+grestore
+% 73
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+152 689 7 7 ellipse_path stroke
+grestore
+% 28--73
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 204 648 moveto
+193 657 169 676 158 685 curveto
+stroke
+grestore
+% 41
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+143 666 7 7 ellipse_path stroke
+grestore
+% 28--41
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 203 646 moveto
+190 651 163 660 150 664 curveto
+stroke
+grestore
+% 265
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1013 1877 7 7 ellipse_path stroke
+grestore
+% 180--265
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1048 1827 moveto
+1041 1838 1025 1860 1017 1871 curveto
+stroke
+grestore
+% 211
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1000 1921 7 7 ellipse_path stroke
+grestore
+% 180--211
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1049 1827 moveto
+1039 1845 1012 1897 1003 1915 curveto
+stroke
+grestore
+% 207
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+971 1836 7 7 ellipse_path stroke
+grestore
+% 154--207
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1031 1779 moveto
+1019 1790 989 1819 976 1831 curveto
+stroke
+grestore
+% 295
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1092 1916 7 7 ellipse_path stroke
+grestore
+% 32--295
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1101 1855 moveto
+1099 1868 1095 1896 1093 1909 curveto
+stroke
+grestore
+% 195
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1087 1949 7 7 ellipse_path stroke
+grestore
+% 32--195
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1101 1855 moveto
+1099 1874 1091 1924 1088 1942 curveto
+stroke
+grestore
+% 164
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1119 1918 7 7 ellipse_path stroke
+grestore
+% 32--164
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1104 1855 moveto
+1107 1869 1114 1898 1117 1911 curveto
+stroke
+grestore
+% 81
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1066 1910 7 7 ellipse_path stroke
+grestore
+% 32--81
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1098 1854 moveto
+1091 1866 1076 1892 1070 1904 curveto
+stroke
+grestore
+% 290
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+23 656 7 7 ellipse_path stroke
+grestore
+% 104--290
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 89 662 moveto
+75 661 44 658 30 657 curveto
+stroke
+grestore
+% 177
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+27 684 7 7 ellipse_path stroke
+grestore
+% 104--177
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 89 665 moveto
+76 669 47 678 34 682 curveto
+stroke
+grestore
+% 299
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1076 2021 7 7 ellipse_path stroke
+grestore
+% 195--299
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1086 1956 moveto
+1084 1970 1079 2000 1077 2014 curveto
+stroke
+grestore
+% 123
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+966 439 7 7 ellipse_path stroke
+grestore
+% 95--123
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 956 508 moveto
+958 493 963 461 965 446 curveto
+stroke
+grestore
+% 119
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+938 439 7 7 ellipse_path stroke
+grestore
+% 95--119
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 953 508 moveto
+950 493 943 461 940 446 curveto
+stroke
+grestore
+% 189
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+997 398 7 7 ellipse_path stroke
+grestore
+% 47--189
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 995 468 moveto
+996 453 997 420 997 405 curveto
+stroke
+grestore
+% 139
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1026 406 7 7 ellipse_path stroke
+grestore
+% 47--139
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 998 468 moveto
+1004 455 1017 426 1023 412 curveto
+stroke
+grestore
+% 54
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1021 359 7 7 ellipse_path stroke
+grestore
+% 47--54
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 997 468 moveto
+1001 447 1015 387 1019 366 curveto
+stroke
+grestore
+% 222
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1449 1377 7 7 ellipse_path stroke
+grestore
+% 74--222
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1395 1343 moveto
+1406 1350 1432 1366 1443 1373 curveto
+stroke
+grestore
+% 121
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1429 1397 7 7 ellipse_path stroke
+grestore
+% 74--121
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1393 1345 moveto
+1401 1356 1417 1380 1425 1391 curveto
+stroke
+grestore
+% 201
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1297 1436 7 7 ellipse_path stroke
+grestore
+% 75--201
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1262 1386 moveto
+1270 1397 1285 1419 1293 1430 curveto
+stroke
+grestore
+% 103
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1267 1444 7 7 ellipse_path stroke
+grestore
+% 75--103
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1259 1387 moveto
+1260 1399 1264 1424 1266 1437 curveto
+stroke
+grestore
+% 252
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+732 632 7 7 ellipse_path stroke
+grestore
+% 218--252
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 777 679 moveto
+767 669 746 647 737 637 curveto
+stroke
+grestore
+% 255
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+47 506 7 7 ellipse_path stroke
+grestore
+% 226--255
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 110 530 moveto
+97 525 67 514 54 509 curveto
+stroke
+grestore
+% 221
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+35 552 7 7 ellipse_path stroke
+grestore
+% 124--221
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 102 564 moveto
+87 561 56 556 42 553 curveto
+stroke
+grestore
+% 282
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1052 290 7 7 ellipse_path stroke
+grestore
+% 54--282
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1024 352 moveto
+1030 339 1043 310 1049 296 curveto
+stroke
+grestore
+% 102
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1024 284 7 7 ellipse_path stroke
+grestore
+% 54--102
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1021 352 moveto
+1022 337 1023 305 1024 291 curveto
+stroke
+grestore
+% 243
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1264 1846 7 7 ellipse_path stroke
+grestore
+% 106--243
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1269 1790 moveto
+1268 1802 1266 1827 1265 1839 curveto
+stroke
+grestore
+% 147
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1300 1840 7 7 ellipse_path stroke
+grestore
+% 106--147
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1273 1790 moveto
+1279 1801 1291 1823 1297 1834 curveto
+stroke
+grestore
+% 122
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1266 1882 7 7 ellipse_path stroke
+grestore
+% 106--122
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1270 1790 moveto
+1269 1809 1267 1857 1266 1875 curveto
+stroke
+grestore
+% 110
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1298 1878 7 7 ellipse_path stroke
+grestore
+% 106--110
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1272 1790 moveto
+1277 1808 1291 1854 1296 1871 curveto
+stroke
+grestore
+% 175
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+455 1112 7 7 ellipse_path stroke
+grestore
+% 143--175
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 515 1091 moveto
+502 1096 475 1105 462 1110 curveto
+stroke
+grestore
+% 109
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+425 1168 7 7 ellipse_path stroke
+grestore
+% 76--109
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 475 1135 moveto
+465 1142 442 1157 431 1164 curveto
+stroke
+grestore
+% 79
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+374 1195 7 7 ellipse_path stroke
+grestore
+% 76--79
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 475 1135 moveto
+456 1146 399 1180 380 1191 curveto
+stroke
+grestore
+% 271
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+189 326 7 7 ellipse_path stroke
+grestore
+% 127--271
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 219 385 moveto
+212 372 198 345 192 332 curveto
+stroke
+grestore
+% 149
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+166 342 7 7 ellipse_path stroke
+grestore
+% 127--149
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 216 386 moveto
+205 377 182 356 172 347 curveto
+stroke
+grestore
+% 251
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+808 240 7 7 ellipse_path stroke
+grestore
+% 77--251
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 819 300 moveto
+817 287 812 260 809 247 curveto
+stroke
+grestore
+% 98
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+804 181 7 7 ellipse_path stroke
+grestore
+% 77--98
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 819 300 moveto
+817 278 808 210 805 188 curveto
+stroke
+grestore
+% 277
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+485 508 7 7 ellipse_path stroke
+grestore
+% 267--277
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 515 561 moveto
+509 549 495 525 489 514 curveto
+stroke
+grestore
+% 283
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+330 1245 7 7 ellipse_path stroke
+grestore
+% 79--283
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 369 1200 moveto
+361 1210 343 1230 335 1239 curveto
+stroke
+grestore
+% 194
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+310 1213 7 7 ellipse_path stroke
+grestore
+% 79--194
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 367 1197 moveto
+355 1201 329 1208 317 1211 curveto
+stroke
+grestore
+% 118
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+294 1245 7 7 ellipse_path stroke
+grestore
+% 79--118
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 368 1199 moveto
+353 1208 315 1232 300 1241 curveto
+stroke
+grestore
+% 223
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+791 79 7 7 ellipse_path stroke
+grestore
+% 98--223
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 803 174 moveto
+801 155 794 105 792 86 curveto
+stroke
+grestore
+% 113
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+795 118 7 7 ellipse_path stroke
+grestore
+% 98--113
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 803 174 moveto
+802 162 798 137 796 125 curveto
+stroke
+grestore
+% 125
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+236 1279 7 7 ellipse_path stroke
+grestore
+% 118--125
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 288 1249 moveto
+277 1255 254 1269 242 1275 curveto
+stroke
+grestore
+% 173
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1840 1355 7 7 ellipse_path stroke
+grestore
+% 86--173
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1787 1346 moveto
+1799 1348 1821 1352 1833 1354 curveto
+stroke
+grestore
+% 172
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1871 1346 7 7 ellipse_path stroke
+grestore
+% 86--172
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1787 1345 moveto
+1804 1345 1847 1346 1864 1346 curveto
+stroke
+grestore
+% 163
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1832 1386 7 7 ellipse_path stroke
+grestore
+% 86--163
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1786 1349 moveto
+1796 1357 1816 1374 1826 1382 curveto
+stroke
+grestore
+% 101
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1891 1392 7 7 ellipse_path stroke
+grestore
+% 86--101
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1787 1348 moveto
+1807 1356 1865 1381 1884 1389 curveto
+stroke
+grestore
+% 185
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+70 412 7 7 ellipse_path stroke
+grestore
+% 126--185
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 142 458 moveto
+127 449 91 425 76 416 curveto
+stroke
+grestore
+% 263
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1941 1348 7 7 ellipse_path stroke
+grestore
+% 172--263
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1878 1346 moveto
+1892 1347 1920 1348 1934 1348 curveto
+stroke
+grestore
+% 264
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1959 1418 7 7 ellipse_path stroke
+grestore
+% 101--264
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1898 1395 moveto
+1911 1400 1939 1410 1952 1415 curveto
+stroke
+grestore
+% 224
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1964 1394 7 7 ellipse_path stroke
+grestore
+% 101--224
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1898 1392 moveto
+1912 1393 1943 1394 1957 1394 curveto
+stroke
+grestore
+% 144
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1944 1439 7 7 ellipse_path stroke
+grestore
+% 101--144
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1896 1397 moveto
+1907 1406 1928 1425 1938 1434 curveto
+stroke
+grestore
+% 297
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1558 1933 7 7 ellipse_path stroke
+grestore
+% 220--297
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1521 1878 moveto
+1529 1890 1546 1915 1554 1927 curveto
+stroke
+grestore
+% 246
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1597 1900 7 7 ellipse_path stroke
+grestore
+% 169--246
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1550 1854 moveto
+1560 1864 1582 1885 1592 1895 curveto
+stroke
+grestore
+% 291
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+676 700 7 7 ellipse_path stroke
+grestore
+% 115--291
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 726 730 moveto
+716 724 693 710 682 704 curveto
+stroke
+grestore
+% 242
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+767 12 7 7 ellipse_path stroke
+grestore
+% 223--242
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 789 72 moveto
+784 59 774 31 769 19 curveto
+stroke
+grestore
+% 241
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+796 8 7 7 ellipse_path stroke
+grestore
+% 223--241
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 791 72 moveto
+793 58 795 29 796 15 curveto
+stroke
+grestore
+% 136
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1269 1956 7 7 ellipse_path stroke
+grestore
+% 122--136
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1266 1889 moveto
+1267 1903 1268 1934 1269 1949 curveto
+stroke
+grestore
+% 117
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1313 1950 7 7 ellipse_path stroke
+grestore
+% 110--117
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1299 1885 moveto
+1302 1899 1309 1929 1311 1943 curveto
+stroke
+grestore
+% 288
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1485 2043 7 7 ellipse_path stroke
+grestore
+% 187--288
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1462 1983 moveto
+1467 1996 1478 2024 1483 2036 curveto
+stroke
+grestore
+% 285
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+8 375 7 7 ellipse_path stroke
+grestore
+% 185--285
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 64 408 moveto
+52 401 26 386 14 379 curveto
+stroke
+grestore
+% 244
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1749 913 7 7 ellipse_path stroke
+grestore
+% 210--244
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1695 952 moveto
+1706 944 1732 926 1743 917 curveto
+stroke
+grestore
+% 287
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1772 959 7 7 ellipse_path stroke
+grestore
+% 140--287
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1713 986 moveto
+1725 980 1753 968 1765 962 curveto
+stroke
+grestore
+% 273
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1823 993 7 7 ellipse_path stroke
+grestore
+% 138--273
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1758 990 moveto
+1772 991 1802 992 1816 993 curveto
+stroke
+grestore
+% 235
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1847 963 7 7 ellipse_path stroke
+grestore
+% 138--235
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1758 988 moveto
+1776 983 1823 970 1840 965 curveto
+stroke
+grestore
+% 191
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1816 957 7 7 ellipse_path stroke
+grestore
+% 138--191
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1757 987 moveto
+1770 980 1797 966 1810 960 curveto
+stroke
+grestore
+% 274
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1914 945 7 7 ellipse_path stroke
+grestore
+% 235--274
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1854 961 moveto
+1867 958 1894 951 1907 947 curveto
+stroke
+grestore
+% 262
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+921 1890 7 7 ellipse_path stroke
+grestore
+% 207--262
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 966 1841 moveto
+956 1852 935 1874 926 1885 curveto
+stroke
+grestore
+% 292
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+956 1980 7 7 ellipse_path stroke
+grestore
+% 211--292
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 996 1927 moveto
+987 1938 969 1963 960 1974 curveto
+stroke
+grestore
+% 231
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+981 1993 7 7 ellipse_path stroke
+grestore
+% 211--231
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 998 1928 moveto
+994 1942 986 1972 983 1986 curveto
+stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 2
+%%Trailer
+%%Pages: 2
+%%BoundingBox: 36 36 2016 2127
+end
+restore
+%%EOF

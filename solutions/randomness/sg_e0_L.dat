@@ -1,0 +1,21 @@
+#/*******************************************************************/
+#/*** Sample x-y-dy data (ground-state energy of 3d spin glasses) ***/
+#/***                                                             ***/
+#/*** Sample programs from the book:                              ***/
+#/*** A.K. Hartmann                                               ***/
+#/*** A practical guide to computer simulation                    ***/
+#/*** World Scientific, Singapore 2008                            ***/
+#/***                                                             ***/
+#/*** Chapter: Randomness and statistics                          ***/
+#/*** Section: Data plotting                                      ***/
+#/*******************************************************************/
+# ground state energy of +-J spin glasses
+# L    e_0   error
+  3 -1.6710 0.0037
+  4 -1.7341 0.0019
+  5 -1.7603 0.0008
+  6 -1.7726 0.0009
+  8 -1.7809 0.0008
+ 10 -1.7823 0.0015
+ 12 -1.7852 0.0004
+ 14 -1.7866 0.0007

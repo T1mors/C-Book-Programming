@@ -1,0 +1,402 @@
+This directory contains sample and solution programs from
+the chapter "Randomness and Statistics" of the book
+A.K. Hartmann "A practical guide to computer simulations"
+(World Scientific, 2008)
+
+
+ATTENTION: many program use drand48(), which generates a random
+number in [0,1) with uniform distribution. For education purposes,
+the drand48() is fine. If in your operating system
+environment you do not have this function available you can use:
+#define drand48() ((double) rand()/RAND_MAX)
+For high-profile scientific applications you should use, e.g., the 
+high-quality random number generators provided by the GNU scientific library.
+
+Gaussian distribution I
+-----------------------
+Prints the probability density function of the Gaussian distribution.
+SOURCES:
+  print_gauss.c
+COMPILE:
+  cc -o print_gauss print_gauss.c -lm -Wall
+RUN:
+  print_gauss <mu> <sigma> 
+
+
+Exponential distribution I
+--------------------------
+Prints the probability density function of the exponential distribution.
+SOURCES:
+  print_expo.c
+COMPILE:
+  cc -o print_expo print_expo.c -lm -Wall
+RUN:
+  print_expo <mu> 
+
+
+Power-law distribution I
+------------------------
+Prints the probability density function of the power-law distribution.
+SOURCES:
+  print_power_law.c
+COMPILE:
+  cc -o print_power_law print_power_law.c -lm -Wall
+RUN:
+   print_power_law <gamma>
+
+
+Fisher-Tippett distribution I
+-----------------------------
+Prints the probability density function of the Fisher-Tippett distribution.
+SOURCES:
+  print_fisher_tippett.c
+COMPILE:
+  cc -o print_fisher_tippett print_fisher_tippett.c -lm -Wall
+RUN:
+   print_fisher_tippett <lambda>
+
+
+Exponential distributed number
+------------------------------
+SOURCES:
+  Contains function which generates via the inversion method
+  a random number which is  exponentially distributed.
+  Calculates the histogram of <num_runs> number generated in this way.
+COMPILE:
+  cc -o expo expo.c -lm -Wall
+RUN:
+  expo <num_runs> <mu>
+
+
+Rejection method
+----------------
+Function which generates a random number via the rejection method.
+Applied for an artificial test pdf. Prints histogram of numbers
+generated for this pdf.
+First argument is number or runs (optional).
+Seed
+SOURCES:
+  reject.c
+COMPILE:
+  cc -o reject reject.c -lm -Wall
+RUN:
+  reject (<num runs>)
+
+Rejection method for hyperspheres
+---------------------------------
+Function which generates a random vector inside or on the
+surface of a hypersphere via the rejection method.
+Prints list of vectors generated plus number/fraction of trials
+needed. First argument is number or runs (optional).
+Seed
+SOURCES:
+  sphere.c
+COMPILE:
+  cc -o sphere sphere.c -lm -Wall
+RUN:
+  sphere (<num runs>)
+
+
+Bootstrap
+---------
+Calculates the variance of an estimator via bootstrapping.
+Solution of exercise: calculates confidence interval via boostraping
+(compile with -DSOLUTION)
+In the main program many times a confidence interval is estimated
+for the expectation value (for a sample from a power-law distribution)
+from the variance (or directly calculated for the exercise) and
+counted how often the true expectation value is inside the confidence
+interval. This is compared to the standard (z=1) Gaussian error bar.
+SOURCES:
+  bootstrap.c
+  bootstrap_test.c   (main file)
+  mean.c
+  variance.c
+  bootstrap_ci.c    (solution of exercise)
+COMPILE:
+  cc -o bt bootstrap_test.c bootstrap.c mean.c variance.c -lm -Wall
+  OR
+  cc -o bt bootstrap_test.c bootstrap_ci.c mean.c variance.c -lm  -Wall -DSOLUTION
+RUN:
+  bt 
+
+
+Plot x-y data
+------------
+Data of energy (y column) as function of system size (x column)
+SOURCES:
+  sg_e0_L.dat
+COMPILE:
+  (gnuplot)
+RUN
+  view with plotting program
+
+
+Vector field
+------------
+Data of vectors to be plotted using gnutplot
+SOURCES:
+  vector_field.dat
+COMPILE:
+  (gnuplot)
+RUN
+  view with plotting program
+
+
+Binder parameter
+---------------
+Datasets of binder parameter (2nd column) as a function of 
+temperature (1st column) for a two-dimensional model    
+model ferromagnet of LxL=30x30 particles.               
+The error bar (3rd column) has been obtained using the   
+Boostrap approach.    
+SOURCES:
+  binder_L8.dat
+  binder_L10.dat
+  binder_L16.dat
+  binder_L30.dat
+COMPILE:
+  (gnuplot)
+RUN:
+  view with plotting program
+
+
+chi^2 test
+----------
+Generates random numbers according to binomial distribution 
+and compares it via the chi2 test to the probability mass 
+function of another binomial distribution   
+SOURCES:
+  chi2.c
+COMPILE:
+  cc -o chi2  chi2.c -lgsl -lgslcblas -lm -Wall
+RUN:
+  chi2
+
+
+Kolmogorov-Smirnov test
+-----------------------
+Generates <n> data points for a exponential distribution with
+parameter <mu> and compares it to the analytical exponential
+distribution via the KS test. Prints the p value.
+SOURCES:
+  ks.c
+COMPILE:
+  cc -o ks ks.c -lm -Wall
+RUN:
+  ks <n> <mu>
+
+
+chi^2 test for independence
+---------------------------
+Chi-squared test for pairs of numbers. Tested via:  
+Generates n pairs of random numbers, the first number 
+according to a standard Gaussian distribution and  the second
+according to a Gaussian where the mean is proportional (factor kappa) 
+to the first number.    
+SOURCES:
+  chi2indep.c
+  points0A.dat
+  points0B.dat
+  points1A.dat
+  points1B.dat
+COMPILE:
+  cc -o chi2indep  chi2indep.c -lgsl -lgslcblas -lm -Wall
+RUN:
+  chi2indep (<kappa>) ( <n> ) )
+
+
+principal component analysis
+----------------------------
+Identifies principal components of a set of multi-dimensional
+data points. Contains analyis function and a simple example
+for generating random vectors.
+Needs GNU Scientific Library
+SOURCES:
+  princ_comp.c 
+COMPILE:
+  cc -o princ_comp princ_comp.c -lgsl -lgslcblas -lm -Wall
+RUN:
+  princ_comp
+
+
+cluster analysis
+----------------
+Generates artifical test data (choose one of the two test test
+via uncommenting lines 548 or 549)
+and performs clustering of data (choose method via setting
+the variable 'method' to 1, 2, or 3 in line 550)
+Needs GNU Scientific Library 
+and some graph functions from ../algorithms directory
+SOURCES:
+  cluster.c
+  some files from ../algorithms/ 
+COMPILE:
+  cc -o cluster cluster.c -lgsl -lgslcblas -lm -Wall \
+    -I../algorithms  ../algorithms/graphs.c \
+  ../algorithms/list.c ../algorithms/graph_comps.c 
+RUN:
+  cluster
+
+
+maximum likelihood
+------------------
+Calculates maximum-likelihood fit for number generated
+from Fisher-Tippett distribution  
+SOURCES:
+  max_likely.c 
+  fischer_tippett.c
+COMPILE:
+  cc -o max_likely  max_likely.c fisher_tippett.c -lgsl -lgslcblas -lm -Wall
+RUN:
+  max_likely (<seed>)
+
+
+Fit with restricted ranges
+--------------------------
+Performs via gnuplot a fit to data points while restricting
+the range of a parameter.
+SOURCES:
+  parabola.dat 
+  fit_restricted.gp
+COMPILE:
+  ---
+RUN:
+  gnuplot fit_restricted.gp
+
+
+Multi-branch fit
+----------------
+Peforms a fit of three functions which share one common
+parameter to three different data sets.
+SOURCES:
+  exp1.dat 
+  multi_fit.gp
+COMPILE:
+  ---
+RUN:
+  gnuplot multi_fit.gp
+
+
+Sample discrete random variable
+-------------------------------
+(solution to exercise)
+Sampling of a discrete random variable (natural numbers) via an array
+which contains the distribution function.
+Contains one function to set upt table (for poisson distribution) and
+one function to sample from the table.
+Sample application: sampling of a lot of numbers+calculation of mean.
+SOURCES:
+  poisson.c
+COMPILE:
+  cc -o poisson poisson.c -lm -g -Wall
+RUN:
+  poisson (<seed>)
+
+
+Fisher-Tippett distributed number
+---------------------------------
+(solution to exercise)
+  contains function which generates a random number which is 
+  distributed according to the Fisher-Tippett distribution.
+  If compile with -DALONE:
+  Calculates the mean of n=10000 number generated in this way
+  and prints also the expectation value.
+SOURCES:
+  fisher_tippett.c
+COMPILE:
+  cc -o fisher_tippett fisher_tippett.c -DALONE -lm -Wall
+RUN:
+  fisher_tippett (<seed>)
+
+
+Gaussian random numbers
+-----------------------
+(solution to exercise)
+Generates Gaussian distributed random numbers via the rejection
+method by bordering it via an exponential distribution.
+Prints histogram of generated numbers.
+Optional argument: Number <n> of numbers (default: 10000)
+SOURCES:
+  gauss_reject.c
+COMPILE:
+  cc -o  gauss_reject gauss_reject.c -lm -Wall
+RUN:
+  variance (<n>)
+
+
+Calculates variance
+---------------------
+(solution to exercise)
+Function which calculates sample variance of array of numbers.
+Contains driver main() function for tests (included if compiled
+withd -DALONE), which generates Gaussian (mu=0,sigma=1) distributed numbers.
+First argument is seed.
+Seed
+SOURCES:
+  variance.c
+COMPILE:
+  cc -o variance variance.c -DALONE -lm -Wall
+RUN:
+  variance <seed>
+
+
+Plotting data
+-------------
+Date file to be plotted with xmgrace
+SOURCE:
+  FTpdf.dat
+  FTplot.agr
+GENERATE:
+  xmgrace
+VIEW:
+  gv FTplot.eps
+
+
+chi^2 test
+----------
+(solutiuon to exercise)
+Generates random numbers for two (different) binomial
+distribution and compares them via the chi2 test  
+SOURCES:
+  chi2hh.c
+COMPILE:
+  cc -o chi2hh  chi2hh.c -lgsl -lgslcblas -lm  -Wall
+RUN:
+  chi2hh
+
+
+linear correlation coefficient
+------------------------------
+(solutiuon to exercise)
+Linear Correlation Coefficient. Tested via: 
+Generates <n> (default 10000) pairs of random numbers, the first number 
+according to a standard Gaussian distribution and  the second
+according to a Gaussian where the mean is proportional (constant <kappa>) 
+to the first number.
+SOURCES:
+  lcc.c
+COMPILE:
+  cc -o lcc  lcc.c  -lm -Wall
+RUN:
+  lcc <kappa> (<n>)
+
+
+Fitting data
+------------
+(solution to exercise)
+Generates random numbers which are 
+distributed according to the Fisher-Tippett distribution with
+parameter lambda=2.0 and peak position x_0=3.0
+Prints histogram pdf of generated data
+  
+SOURCES:
+  fisher_tippett2.c
+COMPILE:
+  cc -o fisher_tippett2 fisher_tippett2.c -lm -Wall
+RUN:
+  fisher_tippett2 (<seed>)
+
+
+
+

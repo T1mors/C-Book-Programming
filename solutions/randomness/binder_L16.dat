@@ -1,0 +1,26 @@
+#********************************************************************/
+#/*** Dataset of binder parameter (2nd column) as a function of   ***/
+#/*** temperature (1st column) for a two-dimensional model        ***/
+#/*** model ferromagnet of LxL=16x16 particles.                   ***/
+#/*** The error bar (3rd column) has been obtained using the      ***/
+#/*** Boostrap approach.                                          ***/
+#/***                                                             ***/
+#/*** Sample programs from the book:                              ***/
+#/*** A.K. Hartmann                                               ***/
+#/*** A practical guide to computer simulation                    ***/
+#/*** World Scientific, Singapore 2008                            ***/
+#/***                                                             ***/
+#/*** Chapter: Randomness and statistics                          ***/
+#/*** Section: Resampling using bootstrap                         ***/
+#/*******************************************************************/
+2.00 0.994021 0.000479
+2.10 0.987064 0.001235
+2.15 0.978308 0.002007
+2.20 0.961993 0.002760
+2.25 0.927985 0.004197
+2.30 0.895076 0.006806
+2.35 0.824437 0.006922
+2.40 0.768507 0.011087
+2.60 0.413343 0.023078
+2.80 0.120347 0.048477
+3.00 0.139121 0.049823

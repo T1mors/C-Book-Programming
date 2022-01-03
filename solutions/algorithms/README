@@ -1,0 +1,146 @@
+This directory contains sample and solution programs from
+the chapter "Algorithms and Datastructures" of the book
+A.K. Hartmann "A practical guide to computer simulations" 
+(World Scientific, 2008)
+
+
+Sum:
+----
+Adds up a list of numbers
+SOURCES:
+  sum.c
+COMPILE:
+  cc -o mysum mysum.c
+RUN:
+  mysum
+
+
+Factorial (rekursive):
+----------------------
+Calculates fac(n)=n! using a recursive approach
+SOURCES:
+  factorial_rec.c
+COMPILE:
+  cc -o fac_rec fac_rec.c
+RUN:
+  fac_rec <n>
+
+
+Factorial (iterative):
+----------------------
+Calculates fac(n)=n! using a iterative (sequential) approach
+SOURCES:
+  factorial_seq.c
+COMPILE:
+  cc -o fac_seq fac_seq.c
+RUN:
+  fac_seq <n>
+
+
+Sorting:
+-------
+Sorting of a list of random numbers using mergesort
+SOURCES:
+  mergesort.h
+  mergesort.c
+COMPILE:
+  cc -o mergesort mergesort.c
+RUN:
+  mergesort
+
+
+Backtracking (N queens problem):
+--------------------------------
+Places N queens on NxN chess board using backtracking. Prints all solutions.
+SOURCES:
+  queens.c
+COMPILE:
+  cc -o queens queens.c
+RUN:
+  queens <N>
+
+
+Lists:
+------
+Single-linked lists storing just one number. Also solutions to exercises
+are included as seperate files. To include the soultions, one has to modify 
+(e.g. uncomment) the main program list_main.c  accordingly to make use of 
+these additional functions.
+SOURCES:
+  list.h
+  list.c
+  list_main.c
+  list_rm_e.c (solution of exercise)
+  list_mergsort.c (solution of exercise)
+COMPILE:
+  cc -o list list_main.c list.c
+  cc -o list list_main.c list.c list_rm_e.c   (for exercise)
+  cc -o list list_main.c list.c list_mergesort.c     (for exercise)
+RUN:
+  list
+
+
+Trees:
+------
+Binary search tree, which contain just the keys. Also solution to exercise
+is included as seperate file. To include the soultion, one has to modify 
+(e.g. uncomment) the main program tree_main.c  accordingly to make use of 
+these additional function.
+SOURCES:
+  tree.h
+  tree.c
+  tree_main.c
+  tree_find.c (solution of exercise)
+  tree_rm.c (solution of exercise)
+COMPILE:
+  cc -o mytree tree_main.c tree.c
+  cc -o mytree tree_main.c tree.c tree_find.c   (for exercise)
+  cc -o mytree tree_main.c tree.c tree_rm.c   (for exercise)
+RUN:
+  mytree
+
+
+Heaps:
+------
+Heaps to store 'events' consitsing of a 'time' and an ID. Also a solution 
+to an exercise
+is included as seperate file. To include the soultion, one has to modify 
+(e.g. uncomment) the main program in heap.c accordingly to make use of 
+these additional function.
+SOURCES:
+  heap.h
+  heap.c  (includes also main)
+  heap_remove.c  (solution of exercise)
+COMPILE:
+  cc -o heap heap.c
+  cc -o heap heap.c heap_remove.c   (for exercise)
+RUN:
+  heap
+
+
+Graphs:
+-------
+Raelization of graphs using list library.  Also solution to exercise
+is included as seperate file. To include the soultion, one has to modify 
+(i.e. comment and uncomment) the main program graph_pa.c accordingly to 
+make use of  these additional function. 
+grap_main.c: generates some edges and prints graph
+graph_pa.c: generates random graphs using preferential attachment
+            (or pure random graphs for exercise) and prints histogram
+SOURCES:
+  from list part: list.h list.c 
+  graphs.h
+  graphs.c
+  graph_r.c     (generation of random graphs, solution to exercises)
+  graph_comp.c  (calculation of connected component, component sizes)
+  graph_main.c  (simple test main program)
+  graph_pa.c    (main prog.: preferential attachment/randoms graphs/clustering)
+COMPILE:
+  cc -o gm1 graph_main.c graphs.c list.c   -lm
+  cc -o gpa graph_pa.c graphs.c list.c  -lm
+  cc -o grand graph_pa.c graphs.c list.c graph_r.c -lm
+  cc -o gcomp graph_pa.c graphs.c list.c graph_r.c graph_comps.c -lm
+RUN:
+  gm1
+  gpa <num_nodes> <min_num_neighbors>
+  grand <num_nodes> <num_edges>
